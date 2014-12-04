@@ -1,7 +1,9 @@
-$(document).ready(function(){
+$(window).bind("load", function() {
   $('input[placeholder], textarea[placeholder]').placeholder();
 
-  // $('.video-types .v-type-title h3').mouseenter(function(){
-  // 	$('.video-types .v-type-wrap .img-shadow').css('background', '#fff');
-  // });
+  $('.video-types .v-type-title').hover(function(){
+  	$(this).find('.v-type-wrap .img-shadow').css('opacity', '0');
+  	$(this).find('.v-type-wrap .img-shadow').css('opacity', '0.5');
+  	console.log("work");
+  });
 });
