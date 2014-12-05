@@ -1,0 +1,12 @@
+<section class="gallery clearfix" data-ng-controller="GalleryImage">
+	<!-- <div class="video-place">
+		<div class="container">
+			<iframe class="video-frame" width="100%" ng-src="{{mainvideoUrl}}" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div> -->
+	<div class="photos">
+		<div data-ng-repeat="item in photos">
+			<img data-ng-src="{{item.img}}" data-ng-click="setVideo(item.videourl)">
+		</div>
+	</div>
+</section>

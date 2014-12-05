@@ -48,6 +48,9 @@ body{
 	.container { width: 1332px !important; }
 }
 
+.form-block{
+	width: 275px;
+}
 .form-custom input{
 	height: 36px;
 	color: #fff;
@@ -246,9 +249,6 @@ body{
 	letter-spacing: 1px;
 	color: #2f174f;
 	line-height: 32px;
-}
-.header-right .form-block{
-	width: 275px;
 }
 .header-right .form-custom{
 	width: 260px;
@@ -507,3 +507,127 @@ body{
 		transform: rotate(-50deg);
 	}
 }*/
+
+/*Gallery*/
+
+.gallery{
+	border-top: 20px solid #fff;
+	box-shadow: inset 0 15px 25px #777, inset 0 -15px 25px #777;
+}
+.gallery img{
+	float: left;
+	width: 16.66%;
+}
+@media (max-width: 479px){
+	.gallery img{
+		width: 100%;
+	}
+}
+@media (min-width: 480px) and (max-width: 767px){
+	.gallery img{
+		width: 33.33%;
+	}
+}
+@media (min-width: 768px) and (max-width: 1279px){
+	.gallery img{
+		width: 25%;
+	}
+}
+
+/*Why Us*/
+
+.why-us{
+	background: url('../img/base/pattern-1.png');
+	padding: 125px 0 50px;
+	position: relative;
+}
+.why-us h1{
+	position: absolute;
+	top: 44%;
+	left: 40%;
+	font-size: 60px !important;
+}
+.why-us .why-item{
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 170px;
+}
+.why-us .why-wrap{
+	width: 100%;
+	margin-left: 285px;
+	margin: 0 auto;
+	max-width: 1400px;
+}
+@media (min-width: 1350px){
+	.why-us .why-wrap{
+		width: calc(100% - 665px);
+	}
+}
+.why-us .why-item:nth-child(even){
+	margin-top: 210px;
+}
+.why-us .why-item:nth-child(7){
+	margin-top: 420px;
+	height: auto;
+}
+.why-us .why-item p{
+	width: 260px;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	line-height: 24px;
+}
+.why-us .why-item .number{
+	position: absolute;
+	top: -37px;
+	left: -90px;
+	z-index: 1;
+	border-radius: 50%;
+	background: #58dbfb;
+	font-size: 100px;
+	line-height: 100px;
+	width: 110px;
+	text-align: center;
+	padding-bottom: 9px;
+}
+
+/*Request*/
+
+.partner-request{
+	background: url('../img/base/city-view-2.jpg') no-repeat;
+	min-height: 650px;
+	background-position: 50% 0;
+	background-size: 100%;
+	padding: 80px 0;
+	line-height: 25px;
+}
+.partner-request h1{
+	margin-bottom: 150px;
+}
+.partner-request .form-block{
+	width: 258px;
+	float: right;
+	margin-top: -15px;
+}
+
+/*Map*/
+
+.map {
+	background: url('../img/base/map.jpg') no-repeat;
+	min-height: 650px;
+	background-position: 50% 0;
+	/*background-size: 100%;*/
+}
+.map .map-info{
+	border-top: 300px solid #fff;
+	border-left: 320px solid transparent; 
+	border-right: 320px solid transparent;
+	width: 635px;
+	margin: 0 auto;
+}
+
+/*Footer*/
+.footer .phone{
+	font-size: 40px;
+}
