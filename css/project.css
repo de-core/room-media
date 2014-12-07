@@ -13,16 +13,23 @@
 h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 h1 { font-size: 44px !important; }
-
 h2 { font-size: 36px !important; }
 
-h3 { font-size: 22px !important; }
+h3 { font-size: 31px !important; }
 
-h4 { font-size: 20px !important; }
+h4 { font-size: 22px !important; }
 
-h5 { font-size: 18px !important; }
+h5 { font-size: 20px !important; }
 
 h6 { font-size: 14px !important; }
+@media (max-width: 767px){
+	h1{
+		font-size: 30px !important;
+	}
+	h2{
+		font-size: 25px !important;
+	}
+}
 
 .md { font-size: 18px; }
 
@@ -139,14 +146,9 @@ body{
 	background-position: 50% 0;
 	background-size: auto 100%;
 }
-.header .header-left{
-	float: left;
-	width: 63%;
-}
-.header-left .menu-sign{
-	margin-right: 15px;
-	margin-left: 102px;
-}
+	.header-left .menu-sign{
+		margin-right: 15px;
+	}
 .header-left .menu-sign:before{
 	width: 47px;
 	height: 17px;
@@ -169,16 +171,12 @@ body{
 	display: inline-block;
 	margin-bottom: 68px;
 }
-.header-left .menu li+li{
-	margin-left: 35px;
-}
 .header-left .menu a{
 	color: #fff;
 	font-size: 20px;
 }
 .header-left .logo img{
-	margin-bottom: 120px;
-	margin-left: 88px;
+	margin-bottom: 50px;
 }
 .header-left .video-frame{
 	display: block;
@@ -197,13 +195,10 @@ body{
 	vertical-align: bottom;
 }
 .header-right{
-	width: 37%;
-	float: right;
 	color: #fff;
-	padding-left: 47px;
+	text-align: center;
 }
 .header-right .contacts{
-	margin-left: 31%;
 	margin-bottom: 74px;
 }
 .header-right .contacts .logotip-wrap{
@@ -230,13 +225,14 @@ body{
 	text-transform: uppercase;
 	font-size: 16px;
 }
-.header-right .contacts h4{
+.header-right .contacts h5{
 	margin-top: 34px;
 }
 .header-right .contacts a{
 	color: #fff;
 	font-size: 21px;
 	text-decoration: underline;
+	display: inline-block;
 }
 .header-right .main-title{
 	margin-bottom: 65px;
@@ -257,6 +253,72 @@ body{
 	line-height: 21px;
 	margin-bottom: 15px;
 }
+@media (max-width: 1279px){
+	.header-left .services{
+		margin-bottom: 60px;
+	}
+	.header-left .services{
+		margin-top: 50px;
+	}
+	.header-left .services p{
+		margin: 0 auto;
+		max-width: 400px;
+		margin-bottom: 20px;
+	}
+	.header-right .form-block{
+		margin: 0 auto;
+	}
+}
+@media (max-width: 479px){
+	.header .header-left .menu{
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+	.header .header-left .menu li{
+		display: block;
+	}
+	.header .header-left .logo{
+		position: absolute;
+		top: 15px;
+	}
+	.header .header-left .logo img{
+		width: 250px;
+	}
+	.header .header-left iframe{
+		display: none;
+	}
+	.header .header-right .main-title span{
+		display: block;
+		margin-bottom: 0;
+	}
+}
+@media (min-width: 1280px){
+	.header .header-left{
+		float: left;
+		width: 63%;
+	}
+	.header-left .menu-sign{
+		margin-left: 102px;
+	}
+	.header-left .menu li+li{
+		margin-left: 35px;
+	}
+	.header-left .logo img{
+		margin-bottom: 120px;
+		margin-left: 88px;
+	}
+	.header-right{
+		width: 37%;
+		float: right;
+		padding-left: 47px;
+		text-align: left;
+	}
+	.header-right .contacts{
+		margin-left: 31%;
+		
+	}
+}
 
 /*Clients*/
 .clients{
@@ -273,6 +335,11 @@ body{
 }
 .clients .row-second{
 	margin-top: -10px;
+}
+@media (max-width: 767px){
+	.clients img{
+		margin-bottom: 30px;
+	}
 }
 
 /*Video-types*/
@@ -335,7 +402,7 @@ body{
 	left: 7px;
 	width: 100%
 }
-.video-types .v-type-title h3{
+.video-types .v-type-title h5{
 	display: block;
 	z-index: 1000;
 	margin-left: auto;
@@ -368,7 +435,7 @@ body{
 /*Our-favourites*/
 .our-favourites{
 	background: url('../img/base/keypad.jpg') no-repeat;
-	min-height: 1090px;
+	/*min-height: 950px;*/
 	padding: 45px 0 40px;
 	background-position: 50% 0;
 	background-size: auto 100%;
@@ -387,15 +454,16 @@ body{
 .our-favourites .work-wrap+.work-wrap{
 	margin-left: 135px
 }
-.our-favourites .second-row, .our-favourites .third-row{
-	margin-top: -190px;
+.our-favourites .work-wrap img{
+	width: 100%;
 }
+
 .our-favourites .work-shadow{
 	background: #777;
 	opacity: 0.5;
 	display: inline-block;
-	width: 260px;
-	height: 260px;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -416,6 +484,61 @@ body{
 .our-favourites .more-link:hover{
 	text-decoration: none;
 	border-bottom: 2px solid transparent;
+}
+@media (min-width: 1280px){
+	.our-favourites .second-row, .our-favourites .third-row{
+		margin-top: -190px;
+	}
+}
+@media (max-width: 1279px){
+	.our-favourites .work-wrap+.work-wrap{
+		margin-left: 100px
+	}
+	.our-favourites .work-wrap{
+		margin-top: 142px;
+		width: 200px;
+		height: 200px;
+	}
+}
+@media (max-width: 1023px){
+	.our-favourites .first-row{
+		margin-top: 130px;
+	}
+	.our-favourites .work-wrap{
+		margin-top: -22px;
+		width: 150px;
+		height: 150px;
+	}
+}
+@media (max-width: 767px){
+	.our-favourites .work-wrap+.work-wrap{
+		margin-left: 55px;
+	}
+	.our-favourites .work-wrap{
+		margin-top: -19px;
+		width: 100px;
+		height: 100px;
+	}
+}
+@media (max-width: 479px){
+	.our-favourites .first-row{
+		margin-top: 0;
+	}
+	.our-favourites .work-wrap+.work-wrap{
+		margin-left: 0;
+	}
+	.our-favourites .work-wrap{
+		margin-top: 90px;
+		width: 100%;
+		height: 100%;
+	}
+	.our-favourites .work-wrap img{
+		width: 50%;
+	}
+	.our-favourites .work-wrap .work-shadow{
+		width: 50%;
+		left: 25%;
+	}
 }
 
 /*Order-Instruction*/
@@ -512,7 +635,12 @@ body{
 
 .gallery{
 	border-top: 20px solid #fff;
-	box-shadow: inset 0 15px 25px #777, inset 0 -15px 25px #777;
+	border-bottom: 20px solid #fff;
+	box-shadow: inset 0 15px 25px rgba(0, 0, 0, 0.4), inset 0 -15px 25px rgba(0, 0, 0, 0.4);
+}
+.gallery .photos{
+	position: relative;
+	z-index: -1;
 }
 .gallery img{
 	float: left;
@@ -559,18 +687,6 @@ body{
 	margin: 0 auto;
 	max-width: 1400px;
 }
-@media (min-width: 1350px){
-	.why-us .why-wrap{
-		width: calc(100% - 665px);
-	}
-}
-.why-us .why-item:nth-child(even){
-	margin-top: 210px;
-}
-.why-us .why-item:nth-child(7){
-	margin-top: 420px;
-	height: auto;
-}
 .why-us .why-item p{
 	width: 260px;
 	display: inline-block;
@@ -591,6 +707,41 @@ body{
 	text-align: center;
 	padding-bottom: 9px;
 }
+@media (min-width: 1350px){
+	.why-us .why-wrap{
+		width: calc(100% - 665px);
+	}
+}
+@media (min-width: 1280px){
+	.why-us .why-item:nth-child(even){
+		margin-top: 210px;
+	}
+	.why-us .why-item:nth-child(7){
+		margin-top: 420px;
+		height: auto;
+	}
+}
+@media (max-width: 767px){
+	.why-us h1{
+		top: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 26px !important;
+	}
+	.why-us .why-item{
+		width: 100%;
+		height: auto;
+		margin-bottom: 70px;
+	}
+	.why-us .why-item p{
+		width: auto;
+		margin-left: 95px;
+	}
+	.why-us .why-item .number{
+		left: 15px;
+	}
+}
 
 /*Request*/
 
@@ -601,6 +752,9 @@ body{
 	background-size: 100%;
 	padding: 80px 0;
 	line-height: 25px;
+	border-top: 20px solid #fff;
+	border-bottom: 20px solid #fff;
+	box-shadow: inset 0 15px 25px rgba(0, 0, 0, 0.4);
 }
 .partner-request h1{
 	margin-bottom: 150px;
@@ -615,19 +769,60 @@ body{
 
 .map {
 	background: url('../img/base/map.jpg') no-repeat;
-	min-height: 650px;
+	min-height: 570px;
 	background-position: 50% 0;
+	border-top: 33px solid #fff;
 	/*background-size: 100%;*/
+	box-shadow: 0px -15px 30px 0px rgba(95, 98, 98, 0.3);
 }
-.map .map-info{
-	border-top: 300px solid #fff;
-	border-left: 320px solid transparent; 
-	border-right: 320px solid transparent;
-	width: 635px;
+.map .info{
+	position: relative;
+	text-align: center;
+}
+.map .info-place{
 	margin: 0 auto;
+	width: 660px;
+	border-top: 330px solid #fff;
+	border-left: 330px solid transparent; 
+	border-right: 330px solid transparent;
+}
+.map .info-text{
+	position: absolute;
+	top: -45px;
+	text-align: center;
+	width: 100%;
+}
+.map .details{
+	width: 300px;
+	margin: 0 auto;
+}
+.map .details .red-text{
+	color: #e05750;
+	text-transform: uppercase;
+}
+.map .details .signature{
+	color: #e05750;
+}
+/*Social*/
+
+.social{
+	background: url('../img/base/pattern-1.png');
+	padding: 35px 0;
 }
 
 /*Footer*/
+.footer{
+	padding-bottom: 30px;
+}
+.footer h3{
+	margin-left: 395px;
+	line-height: 50px;
+	margin-bottom: 20px;
+}
+.footer img{
+	margin-left: 235px;
+}
 .footer .phone{
-	font-size: 40px;
+	font-size: 37px;
+	margin-right: 70px;
 }
