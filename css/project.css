@@ -140,11 +140,14 @@ body{
 /*Header*/
 
 .header {
-	background: url('../img/base/header.jpg') no-repeat;
-	min-height: 1092px;
+	position: relative;
+}
+.header-content{
+	position: absolute;
+	width: 100%;
 	padding: 60px 0;
-	background-position: 50% 0;
-	background-size: auto 100%;
+	top: 0;
+	left: 0;
 }
 	.header-left .menu-sign{
 		margin-right: 15px;
@@ -321,13 +324,17 @@ body{
 }
 
 /*Clients*/
+
 .clients{
-	background: url('../img/base/city-view.jpg') no-repeat;
-	min-height: 399px;
+	position: relative;
+}
+.clients-content{
 	color: #fff;
 	padding: 33px 0;
-	background-position: 50% 0;
-	background-size: auto 100%;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
 .clients h2{
 	letter-spacing: 2px;
@@ -345,7 +352,7 @@ body{
 /*Video-types*/
 
 .video-types{
-	background: url('../img/base/pattern-1.png');
+	background: url('../img/base/old_moon.png');
 	padding: 40px 0 55px;
 	position: relative;
 }
@@ -390,8 +397,10 @@ body{
 	left: 3px;
 	top: 3px;
 	border: 1px solid #000;
+	transition: all 0.1s ease-out;
 }
-.video-types .v-type-wrap .img-shadow:hover {
+.video-types .v-type-wrap .img-shadow:hover,
+.video-types .v-type-wrap .img-shadow.hovered {
 	opacity: 0;
 	transition: all 0.1s ease-out;
 }
@@ -434,11 +443,14 @@ body{
 
 /*Our-favourites*/
 .our-favourites{
-	background: url('../img/base/keypad.jpg') no-repeat;
-	/*min-height: 950px;*/
+	position: relative;
+}
+.our-favourites-content{
 	padding: 45px 0 40px;
-	background-position: 50% 0;
-	background-size: auto 100%;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
 .our-favourites a{
 	display: block;
@@ -491,11 +503,14 @@ body{
 	}
 }
 @media (max-width: 1279px){
+	.our-favourites .first-row{
+		margin-top: 150px;
+	}
 	.our-favourites .work-wrap+.work-wrap{
 		margin-left: 100px
 	}
 	.our-favourites .work-wrap{
-		margin-top: 142px;
+		margin-top: -47px;
 		width: 200px;
 		height: 200px;
 	}
@@ -544,7 +559,7 @@ body{
 /*Order-Instruction*/
 
 .order-instr{
-	background: url('../img/base/pattern-1.png');
+	background: url('../img/base/old_moon.png');
 	padding: 50px 0;
 }
 .order-instr h1{
@@ -648,7 +663,7 @@ body{
 }
 @media (max-width: 479px){
 	.gallery img{
-		width: 100%;
+		width: 50%;
 	}
 }
 @media (min-width: 480px) and (max-width: 767px){
@@ -665,7 +680,7 @@ body{
 /*Why Us*/
 
 .why-us{
-	background: url('../img/base/pattern-1.png');
+	background: url('../img/base/old_moon.png');
 	padding: 125px 0 50px;
 	position: relative;
 }
@@ -683,7 +698,7 @@ body{
 }
 .why-us .why-wrap{
 	width: 100%;
-	margin-left: 285px;
+	padding-left: 200px;
 	margin: 0 auto;
 	max-width: 1400px;
 }
@@ -710,6 +725,7 @@ body{
 @media (min-width: 1350px){
 	.why-us .why-wrap{
 		width: calc(100% - 665px);
+		min-width: 1400px;
 	}
 }
 @media (min-width: 1280px){
@@ -721,7 +737,26 @@ body{
 		height: auto;
 	}
 }
+@media (min-width: 768px) and (max-width: 1279px){
+	.why-us .why-wrap{
+		padding-left: 50px;
+	}
+	.why-us .why-item{
+		width: 40%;
+		margin-left: 10%;
+	}
+	.why-us h1{
+		top: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 36px !important;
+	}
+}
 @media (max-width: 767px){
+	.why-us .why-wrap{
+		padding-left: 0;
+	}
 	.why-us h1{
 		top: 0;
 		left: 0;
@@ -746,15 +781,18 @@ body{
 /*Request*/
 
 .partner-request{
-	background: url('../img/base/city-view-2.jpg') no-repeat;
-	min-height: 650px;
-	background-position: 50% 0;
-	background-size: 100%;
-	padding: 80px 0;
+	position: relative;
+}
+.partner-request-content{
 	line-height: 25px;
-	border-top: 20px solid #fff;
+	padding: 80px 0;
+	box-shadow: inset 0 15px 25px rgba(0, 0, 0, 0.4), inset 0 -15px 25px rgba(0, 0, 0, 0.4);
 	border-bottom: 20px solid #fff;
-	box-shadow: inset 0 15px 25px rgba(0, 0, 0, 0.4);
+	border-top: 20px solid #fff;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
 .partner-request h1{
 	margin-bottom: 150px;
@@ -764,7 +802,18 @@ body{
 	float: right;
 	margin-top: -15px;
 }
-
+@media (max-width: 767px){
+	.partner-request{
+		padding: 40px 0;
+	}
+	.partner-request h1{
+		margin-bottom: 50px;
+	}
+	.partner-request .form-block{
+		float: none;
+		margin: 20px auto;
+	}
+}
 /*Map*/
 
 .map {
@@ -806,7 +855,7 @@ body{
 /*Social*/
 
 .social{
-	background: url('../img/base/pattern-1.png');
+	background: url('../img/base/old_moon.png');
 	padding: 35px 0;
 }
 
