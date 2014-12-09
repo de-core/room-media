@@ -51,9 +51,9 @@ body{
 	font-family: 'open_sansregular';
 }
 @media (min-width: 940px) { body { overflow-x: hidden; } }
-@media (min-width: 1350px) { 
+/*@media (min-width: 1350px) { 
 	.container { width: 1332px !important; }
-}
+}*/
 
 .form-block{
 	width: 275px;
@@ -149,7 +149,7 @@ body{
 	top: 0;
 	left: 0;
 }
-	.header-left .menu-sign{
+.header-left .menu-sign{
 		margin-right: 15px;
 	}
 .header-left .menu-sign:before{
@@ -329,9 +329,9 @@ body{
 }
 .clients-content{
 	color: #fff;
-	padding: 33px 0;
 	position: absolute;
 	width: 100%;
+	padding: 33px 0;
 	top: 0;
 	left: 0;
 }

@@ -1,8 +1,8 @@
 'use strict';
 
 /* Directives */
-angular.module('scriptsDirectives', [])
-	.directive('hoverEffect', function(){
+var app_d = angular.module('scriptsDirectives', []);
+	app_d.directive('hoverEffect', function(){
 		return function(scope, element, attrs){
 			element.bind('mouseenter', function(e){
 				e.preventDefault();
@@ -14,38 +14,28 @@ angular.module('scriptsDirectives', [])
 			});
 		}
 	});
-angular.module('placeholderDirective', [])
-	.directive('myPlaceholder', function(){
+	app_d.directive('myPlaceholder', function(){
 		return function(scope, element, attrs){
 			element.placeholder();
 		}
 	});
 
-var app_f = angular.module('fotoramaDirectives', [])
-	// app_f.directive('blockHeight', function(){
-	// 	return function(scope, element, attrs){
-	// 		element.load(function(){
-	// 			var h = element.height();
-	// 		})
-	// 	}
-	// });
-	app_f.directive('myFotorama', function() {
+	app_d.directive('myFotorama', function() {
 		return function(scope, element, attrs) {
-			var content_height = element.parent().find('.content').outerHeight();
+			var h = element.parent().find('.content').outerHeight();
+			console.log(h)
+			// element.parent().find('.content').enquire.register("screen and (min-width:1200px)", {
+			// 	match : function() {
+			// 		element.fotorama({
+			// 			height: 'px'
+			// 		});
+			// 	},
+			// });
 			element.fotorama({
-				fit: 'cover',
+				height: h,
 				width: '100%',
-				height: content_height
+				fit: 'cover'
 			});
 		};
 	})
 
-// angular.module('loadOnDemain', [])
-
-// 	.directive('myScripts', function(){
-// 		return{
-// 			restrict: 'A',
-// 			template: '<div></div>',
-// 			replace: true
-// 		}
-// 	})
