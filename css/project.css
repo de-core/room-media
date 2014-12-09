@@ -272,6 +272,11 @@ body{
 		margin: 0 auto;
 	}
 }
+@media (max-width: 677px){
+	.header .header-left iframe{
+		width: 100%;
+	}
+}
 @media (max-width: 479px){
 	.header .header-left .menu{
 		width: 100%;
@@ -339,9 +344,15 @@ body{
 	letter-spacing: 2px;
 	margin-bottom: 75px;
 }
-.clients .row-second{
+.clients .row-second img{
 	margin-top: -10px;
 }
+.clients a{
+	display: block;
+}
+.clients img{
+		height: 75px;
+	}
 @media (max-width: 767px){
 	.clients img{
 		margin-bottom: 30px;
@@ -781,13 +792,13 @@ body{
 
 .partner-request{
 	position: relative;
+	box-shadow: inset 0 15px 25px rgba(0, 0, 0, 0.4), inset 0 -15px 25px rgba(0, 0, 0, 0.4);
+	border-bottom: 20px solid #fff;
+	border-top: 20px solid #fff;
 }
 .partner-request-content{
 	line-height: 25px;
 	padding: 80px 0;
-	/*box-shadow: inset 0 15px 25px rgba(0, 0, 0, 0.4), inset 0 -15px 25px rgba(0, 0, 0, 0.4);*/
-	border-bottom: 20px solid #fff;
-	border-top: 20px solid #fff;
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -813,6 +824,7 @@ body{
 		margin: 20px auto;
 	}
 }
+
 /*Map*/
 
 .map {
