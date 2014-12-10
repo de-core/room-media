@@ -31,15 +31,3 @@
 				})
 			}
 		});
-		// app_d.directive('myFotorama', function() {
-		// 		return function(scope, element, attrs) {
-		// 			// var h = element.parent().find('.content').outerHeight();
-		// 			console.log(h)
-		// 			element.fotorama({
-		// 				height: h,
-		// 				width: '100%',
-		// 				fit: 'cover'
-		// 			});
-		// 		};
-		// });
-

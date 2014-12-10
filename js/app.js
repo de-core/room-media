@@ -2,7 +2,7 @@
 
 /* App Module */
 
-var app=angular.module('vsApp', 
+var app=angular.module('roomApp', 
 	[
 		'roomControllers',
 		'scriptsDirectives'
