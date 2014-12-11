@@ -810,27 +810,16 @@ body{
 	position: relative;
 }
 .why-us h1{
-	/*position: absolute;
-	top: 44%;
-	left: 40%;*/
 	font-size: 60px !important;
 	text-align: center;
 }
 .why-us .why-item{
 	position: relative;
 	float: left;
-	/*width: 25%;*/
 	height: 140px;
 }
-/*.why-us .why-wrap{
-	width: 100%;
-	padding-left: 200px;
-	margin: 0 auto;
-	max-width: 1400px;
-}*/
+
 .why-us .why-item p{
-	/*width: 260px;*/
-	/*display: inline-block;*/
 	position: relative;
 	z-index: 2;
 	line-height: 24px;
@@ -860,26 +849,8 @@ body{
 	.why-us .second-row .why-item:nth-child(even){
 		margin-top: 160px;
 	}
-	/*.why-us .why-item:nth-child(7){
-		margin-top: 420px;
-		height: auto;
-	}*/
 }
 @media (min-width: 1024px) and (max-width: 1279px){
-	/*.why-us .why-wrap{
-		padding-left: 50px;
-	}
-	.why-us .why-item{
-		width: 40%;
-		margin-left: 10%;
-	}
-	.why-us h1{
-		top: 0;
-		left: 0;
-		width: 100%;
-		text-align: center;
-		font-size: 36px !important;
-	}*/
 	.why-us .first-row .why-item:nth-child(3){
 		margin-top: 40px;
 	}
