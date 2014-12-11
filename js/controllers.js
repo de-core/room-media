@@ -2,18 +2,29 @@
 
 /* Controllers */
 var app_c=angular.module('roomControllers', []);
-	app_c.controller('GalleryImage', [ '$scope', '$http', function($scope, $http){
+	app_c.controller('galleryImage', [ '$scope', '$http', function($scope, $http){
 		$http.get('data/projects.json').success(function(data, status, headers, config){
-			$scope.photos=data;
-			// $scope.selected = data[0].videourl;
-			console.log(data[0].videourl);
-		});
-		$scope.videoPlay = function(v) {
+			$scope.photos = data;
+			$scope.selected = data[0].img;
+		}).error(function(data, status, headers, config){
+              alert("Error");
+          });
+		// $scope.photos=Photo;
+		$scope.setVideo = function(video) {
 			console.log('work')
-			$scope.selected = v;
+			$scope.selected = video;
 		}
 	}]);
+	// app_c.controller('PhotoVideo', ['$scope', '$routeParams', 'Photo',
+ //  function($scope, $routeParams, Photo) {
+ //    $scope.image = Photo.get({img: $routeParams.img}, function(image) {
+ //      $scope.mainImageUrl = phone[0];
+ //    });
 
+ //    $scope.setImage = function(imageUrl) {
+ //      $scope.mainImageUrl = imageUrl;
+ //    }
+ //  }]);
 	// app_c.controller('VideoCtrl', ['$scope', '$routeParams', 'Photo',
  //  function($scope, $routeParams, Photo) {
  //    $scope.video = Photo.get({videoUrl: $routeParams.phoneId}, function(phone) {
@@ -25,6 +36,11 @@ var app_c=angular.module('roomControllers', []);
  //    }
  //  }]);
 
+	app_c.controller('testController', ['$scope', function($scope){
+		$scope.test = function(){
+			console.log('work test');
+		}
+	}]);
 
 	app_c.controller('googleMap', ['$scope', function($scope) {
 	var mapContainer = document.getElementById('map-place');

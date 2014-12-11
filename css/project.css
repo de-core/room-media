@@ -778,9 +778,6 @@ body{
 	float: left;
 	width: 12.5%;
 }
-.gallery .photos .image a{
-	display: block;
-}
 @media (max-width: 479px){
 	.gallery .photos img{
 		width: 50%;
