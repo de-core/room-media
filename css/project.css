@@ -859,13 +859,28 @@ body{
 	}
 }
 @media (max-width: 767px){
+	.why-us{
+		padding-bottom: 0;
+	}
 	.why-us h1{
 		top: 0;
 		left: 0;
 		position: absolute;
 		font-size: 26px !important;
+		width: 100%;
 	}
 	.why-us .first-row{
+		margin-bottom: 0;
+	}
+	.why-us .second-row{
+		margin-top: 0;
+	}
+	.why-us .why-item{
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 479px){
+	.why-us .why-item{
 		margin-bottom: 50px;
 	}
 }
