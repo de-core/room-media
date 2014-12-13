@@ -1,11 +1,10 @@
 <section class="gallery clearfix" id="gallery" ng-controller="galleryImage">
-	<div class="video-place">
+	<div class="video-place" ng-show="selected" ng-class="hide">
 		<div class="container">
-		<!-- 	<iframe class="video-frame" width="100%" height="500" src="" ng-src="{{selected}}" frameborder="0" allowfullscreen></iframe> -->
-			<img ng-src="{{selected}}">
+			<iframe class="video-frame" width="100%" height="500" autoplay="false" src="" ng-src="{{selected}}" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
-	<div class="photos">
-		<img data-ng-repeat="item in photos | limitTo:24" data-ng-src="{{item.img}}" ng-click="setVideo(item.img)">
+	<div class="images">
+		<img ng-repeat="photo in photos | limitTo:24" ng-src="{{photo.img}}" ng-click="setVideo(photo.videourl)"; >
 	</div>
 </section>

@@ -644,10 +644,6 @@ body{
 .order-instr .first-row{
 	margin-bottom: 55px;
 }
-/*.order-instr .second-row .line{
-	transform: rotate(-40deg);
-	top: -80px;
-}*/
 @media (min-width: 1280px){
 	.order-instr .first-row .instr-wrap:nth-child(odd) .line{
 		transform: rotate(40deg);
@@ -768,33 +764,37 @@ body{
 .gallery{
 	border-top: 20px solid #fff;
 	border-bottom: 20px solid #fff;
+}
+.gallery .video-place{
+	background: url('../img/base/old_moon.png');
+}
+.gallery iframe{
+	margin-bottom: -4px;
+}
+.gallery .images{
 	box-shadow: inset 0 15px 25px rgba(0, 0, 0, 0.4), inset 0 -15px 25px rgba(0, 0, 0, 0.4);
 }
-.gallery .photos{
-	position: relative;
-	z-index: -1;
-}
-.gallery .photos img{
-	float: left;
+.gallery .images img{
+	/*float: left;*/
 	width: 12.5%;
 }
 @media (max-width: 479px){
-	.gallery .photos img{
+	.gallery .images img{
 		width: 50%;
 	}
 }
 @media (min-width: 480px) and (max-width: 767px){
-	.gallery .photos img{
+	.gallery .images img{
 		width: 33.33%;
 	}
 }
 @media (min-width: 768px) and (max-width: 1023px){
-	.gallery .photos img{
+	.gallery .images img{
 		width: 25%;
 	}
 }
 @media (min-width: 1024px) and (max-width: 1599px){
-	.gallery .photos img{
+	.gallery .images img{
 		width: 16.6%;
 	}
 }

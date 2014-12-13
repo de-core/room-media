@@ -44,14 +44,3 @@
 				})
 			}
 		});
-
-		app_d.directive('loadVideo', function(){
-			return function(scope, element, attrs){
-				element.find('.photos').find('img').click(function(){
-					console.log('work')
-					// e.preventDefault();
-					// var activeImage = this.parent().attr('href');
-					// element.find('.video-place .video-frame').attr('src', activeImage);
-				});
-			}
-		});
