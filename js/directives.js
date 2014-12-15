@@ -18,7 +18,7 @@
 		app_d.directive('scrollEffect', function(){
 			return function(scope, element, attrs){
 				smoothScroll.init({
-					speed: 400,
+					speed: 600,
 					easing: 'linear',
 					offset: 0,
 					updateURL: true,
@@ -28,11 +28,17 @@
 			}
 		});
 
-		app_d.directive('myPlaceholder', function(){
+		app_d.directive('formEffect', function(){
 			return function(scope, element, attrs){
-				element.placeholder();
+				$.material.init();
 			}
 		});
+
+		// app_d.directive('myPlaceholder', function(){
+		// 	return function(scope, element, attrs){
+		// 		element.placeholder();
+		// 	}
+		// });
 		var h=0;
 		app_d.directive('blockHeight', function(){
 			return function(scope, element, attrs){

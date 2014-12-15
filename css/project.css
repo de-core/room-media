@@ -127,8 +127,8 @@ body{
 	line-height: 30px;
 }
 .form-custom button.btn{
-	background: #fff;
-	color: #2f174f;
+	background: #fff !important;
+	color: #2f174f !important;
 	white-space: pre-line;
 	margin-top: 34px;
 	padding: 5px 25px;
@@ -184,6 +184,7 @@ body{
 .header-left .video-frame{
 	display: block;
 	margin: 0 auto;
+	width: 100%;
 }
 .header-left .services{
 	margin-top: 140px;
@@ -219,6 +220,9 @@ body{
 	opacity: 0.3;
 	transform: rotate(45deg);
 }
+.header-right .contacts .s-links a:hover .logotip-rhombus{
+	opacity: 0.5;
+}
 .header-right .contacts .logotip-wrap span{
 	position: absolute;
 	font-family: 'exo_2.0black';
@@ -231,11 +235,14 @@ body{
 .header-right .contacts h5{
 	margin-top: 34px;
 }
-.header-right .contacts a{
+.header-right .contacts a.mail-to{
 	color: #fff;
 	font-size: 21px;
 	text-decoration: underline;
 	display: inline-block;
+}
+.header-right .contacts a.mail-to:hover{
+	text-decoration: none;
 }
 .header-right .main-title{
 	margin-bottom: 65px;
@@ -301,10 +308,24 @@ body{
 		margin-bottom: 0;
 	}
 }
+@media (min-width: 1024px){
+	.header .header-left{
+		width: 56%;
+		float: left;
+	}
+	.header .header-right{
+		width: 44%;
+		text-align: left;
+		float: right;
+		padding-left: 47px;
+	}
+	.header .header-right h2{
+		font-size: 30px !important;
+	}
+}
 @media (min-width: 1280px){
 	.header .header-left{
-		float: left;
-		width: 63%;
+		width: 60%;
 	}
 	.header-left .menu-sign{
 		margin-left: 102px;
@@ -316,11 +337,14 @@ body{
 		margin-bottom: 120px;
 		margin-left: 88px;
 	}
-	.header-right{
-		width: 37%;
-		float: right;
-		padding-left: 47px;
-		text-align: left;
+	.header-left .video-frame{
+		min-width: 600px;
+	}
+	.header .header-right{
+		width: 40%;
+	}
+	.header .header-right h2{
+		font-size: 36px !important;
 	}
 	.header-right .contacts{
 		margin-left: 31%;
@@ -533,6 +557,7 @@ body{
 	display: inline-block;
 	margin-top: 108px;
 	line-height: 29px;
+	text-decoration: none;
 }
 .our-favourites .more-link:hover{
 	text-decoration: none;
@@ -644,6 +669,11 @@ body{
 .order-instr .first-row{
 	margin-bottom: 55px;
 }
+@media (min-width: 1024px){
+	.order-instr .first-row .instr-wrap:nth-child(even){
+		margin-top: 165px;
+	}
+}
 @media (min-width: 1280px){
 	.order-instr .first-row .instr-wrap:nth-child(odd) .line{
 		transform: rotate(40deg);
@@ -674,9 +704,9 @@ body{
 	}
 	
 }
-@media (min-width: 1024px){
-	.order-instr .first-row .instr-wrap:nth-child(even){
-		margin-top: 165px;
+@media (min-width: 1350px){
+	.order-instr .second-row .line{
+		width: 295px;
 	}
 }
 @media (min-width: 1024px) and (max-width: 1279px){
@@ -775,7 +805,7 @@ body{
 	box-shadow: inset 0 15px 25px rgba(0, 0, 0, 0.4), inset 0 -15px 25px rgba(0, 0, 0, 0.4);
 }
 .gallery .images img{
-	/*float: left;*/
+	cursor: pointer;
 	width: 12.5%;
 }
 @media (max-width: 479px){
@@ -978,6 +1008,15 @@ body{
 }
 .map .details .signature{
 	color: #e05750;
+}
+.map .info .address{
+	position: absolute;
+	bottom: -55px;
+	left: 50%;
+	margin-left: 20px;
+	width: 195px;
+	text-align: left;
+	font-weight: bold;
 }
 /*Social*/
 
