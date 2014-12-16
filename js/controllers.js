@@ -9,8 +9,8 @@ var app_c=angular.module('roomControllers', []);
 		}).error(function(data){
 			alert("Data json Error");
 		});
-		$scope.videoPlay = function(linkurl){
-			$scope.selected = linkurl;
+		$scope.videoPlay = function(value){
+			$scope.selected = value;
 		}
 	}]);
 

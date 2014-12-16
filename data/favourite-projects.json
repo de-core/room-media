@@ -5,26 +5,26 @@
 	},
 	{
 		"img": "img/projects/project-2.jpg",
-		"videourl": "http://www.youtube.com/embed/FkX88N4pCow?rel=0"
+		"videourl": "https://www.youtube.com/watch?v=18-xvIjH8T4"
 	},
 	{
 		"img": "img/projects/project-3.jpg",
-		"videourl": "data/video/Dan_Balan.mp4"
+		"videourl": ""
 	},
 	{
 		"img": "img/projects/project-4.jpg",
-		"videourl": "data/video/Dan_Balan.mp4"
+		"videourl": ""
 	},
 	{
 		"img": "img/projects/project-5.jpg",
-		"videourl": "data/video/Dan_Balan.mp4"
+		"videourl": ""
 	},
 	{
 		"img": "img/projects/project-6.jpg",
-		"videourl": "data/video/Dan_Balan.mp4"
+		"videourl": ""
 	},
 	{
 		"img": "img/projects/project-7.jpg",
-		"videourl": "data/video/Dan_Balan.mp4"
+		"videourl": ""
 	}
 ]

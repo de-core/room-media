@@ -5,6 +5,7 @@
 var app=angular.module('roomApp', 
 	[
 		'roomControllers',
-		'scriptsDirectives'
+		'scriptsDirectives',
+		'youtube-embed'
 	]
 );
