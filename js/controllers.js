@@ -3,15 +3,27 @@
 /* Controllers */
 var app_c=angular.module('roomControllers', []);
 
+	app_c.controller('videoController', [ '$scope', '$http', function($scope, $http){
+		$http.get('data/favourite-projects.json').success(function(data){
+			$scope.favorites = data;
+		}).error(function(data){
+			alert("Data json Error");
+		});
+		$scope.videoPlay = function(linkurl){
+			$scope.selected = linkurl;
+		}
+	}]);
+
 	app_c.controller('galleryImage', [ '$scope', '$http', function($scope, $http){
 		$http.get('data/projects.json').success(function(data){
 			$scope.photos = data;
 		}).error(function(data){
-			  alert("Data json Error");
+			alert("Data json Error");
 		});
 		$scope.setVideo = function(value){
-			$scope.selected=value
+			$scope.selected=value;
 		}
+
 	}]);
 
 	app_c.controller('googleMap', ['$scope', function($scope) {

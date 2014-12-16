@@ -34,11 +34,11 @@
 			}
 		});
 
-		// app_d.directive('myPlaceholder', function(){
-		// 	return function(scope, element, attrs){
-		// 		element.placeholder();
-		// 	}
-		// });
+		app_d.directive('myPlaceholder', function(){
+			return function(scope, element, attrs){
+				element.placeholder();
+			}
+		});
 		var h=0;
 		app_d.directive('blockHeight', function(){
 			return function(scope, element, attrs){
@@ -50,3 +50,5 @@
 				})
 			}
 		});
+
+		

@@ -6,15 +6,16 @@
 		<div class="container text-center">
 			<h1 class="exo-bold white">Наши любимые работы</h1>
 			<div class="first-row">
-				<div class="work-wrap">
-					<a href="">
-						<img src="img/projects/project-1.jpg">
+				<div class="work-wrap" video-play>
+					<a data-scroll href="#gallery" ng-click="videoPlay(favorites[1].videourl)">
+						<img ng-src="{{favorites[0].img}}">
+						<!-- {{favorites[1].img}} -->
 						<div class="work-shadow"></div>
 					</a>
 				</div>
 				<div class="work-wrap">
-					<a href="">
-						<img src="img/projects/project-5.jpg">
+					<a data-scroll href="#gallery" ng-click="videoPlay(favorites[6].videourl)">
+						<img ng-src="{{favorites[5].img}}">
 						<div class="work-shadow"></div>
 					</a>
 				</div>
@@ -47,7 +48,7 @@
 					</a>
 				</div>
 			</div>
-			<a href="#gallery" class="more-link">Больше работ</a>
+			<a data-scroll href="#gallery" class="more-link">Больше работ</a>
 		</div>
 	</div>
 </section>
