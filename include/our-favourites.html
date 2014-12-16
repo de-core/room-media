@@ -1,4 +1,4 @@
-<section class="our-favourites" block-height>
+<section class="our-favourites" id="our-favourites" block-height>
 	<div class="fotorama">
 		<img src="img/base/keypad.jpg">
 	</div>
@@ -6,46 +6,39 @@
 		<div class="container text-center">
 			<h1 class="exo-bold white">Наши любимые работы</h1>
 			<div class="first-row">
-				<div class="work-wrap" video-play>
-					<a data-scroll href="#gallery" ng-click="videoPlay(favorites[1].videourl)">
+				<div class="work-wrap">
+					<figure class="effect-julia" ng-click="videoPlay(favorites[0].videourl)">
 						<img ng-src="{{favorites[0].img}}">
-						<!-- {{favorites[1].img}} -->
-						<div class="work-shadow"></div>
-					</a>
+					</figure>
 				</div>
 				<div class="work-wrap">
-					<a data-scroll href="#gallery" ng-click="videoPlay(favorites[6].videourl)">
-						<img ng-src="{{favorites[5].img}}">
-						<div class="work-shadow"></div>
-					</a>
+					<figure class="effect-julia" ng-click="videoPlay(favorites[1].videourl)">
+						<img ng-src="{{favorites[1].img}}">
+					</figure>
 				</div>
 				<div class="work-wrap">
-					<a href="">
-						<img src="img/projects/project-2.jpg">
-						<div class="work-shadow"></div>
-					</a>
+					<figure class="effect-julia" ng-click="videoPlay(favorites[2].videourl)">
+						<img ng-src="{{favorites[2].img}}">
+					</figure>
 				</div>
 			</div>
 			<div class="second-row">
 				<div class="work-wrap">
-					<a href="">
-						<img src="img/projects/project-3.jpg">
-						<div class="work-shadow"></div>
-					</a>
+					<figure class="effect-julia" ng-click="videoPlay(favorites[3].videourl)">
+						<img ng-src="{{favorites[3].img}}">
+					</figure>
 				</div>
 				<div class="work-wrap">
-					<a href="">
-						<img src="img/projects/project-4.jpg">
-						<div class="work-shadow"></div>
-					</a>
+					<figure class="effect-julia" ng-click="videoPlay(favorites[4].videourl)">
+						<img ng-src="{{favorites[4].img}}">
+					</figure>
 				</div>
 			</div>
 			<div class="third-row">
 				<div class="work-wrap">
-					<a href="">
-						<img src="img/projects/project-5.jpg">
-						<div class="work-shadow"></div>
-					</a>
+					<figure class="effect-julia" ng-click="videoPlay(favorites[5].videourl)">
+						<img ng-src="{{favorites[5].img}}">
+					</figure>
 				</div>
 			</div>
 			<a data-scroll href="#gallery" class="more-link">Больше работ</a>

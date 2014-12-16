@@ -5,6 +5,10 @@
 		</div>
 	</div>
 	<div class="images">
-		<img data-scroll ng-repeat="photo in photos | limitTo:24" ng-src="{{photo.img}}" ng-click="setVideo(photo.videourl);">
+		<div class="grid">
+			<figure class="effect-julia" ng-repeat="photo in photos | limitTo:24">
+				<img ng-src="{{photo.img}}" ng-click="setVideo(photo.videourl);">
+			</figure>
+		</div>
 	</div>
 </section>

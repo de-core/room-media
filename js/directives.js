@@ -6,11 +6,11 @@
 			return function(scope, element, attrs){
 				element.bind('mouseenter', function(e){
 					e.preventDefault();
-					element.parent().find('.v-type-wrap .img-shadow').addClass('hovered');
+					element.parent().find('.v-type-wrap figure img').addClass('hovered');
 				});
 				element.bind('mouseleave', function(e){
 					e.preventDefault();
-					element.parent().find('.v-type-wrap .img-shadow').removeClass('hovered');
+					element.parent().find('.v-type-wrap figure img').removeClass('hovered');
 				});
 			}
 		});
