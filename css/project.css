@@ -164,6 +164,29 @@ body{
 	padding: 5px 25px;
 	line-height: 16px;
 }
+.modal .modal-content{
+	background-color: #575671;
+}
+.modal .modal-content .modal-header{
+	border-bottom: none;
+}
+.modal .modal-content .modal-header h3{
+	margin-top: 20px;
+}
+.modal .modal-content .modal-header .close{
+	color: #fff;
+	opacity: 0.8;
+}
+.modal .modal-content .modal-footer{
+	border-top: none;
+	margin-top: 0;
+}
+.modal .modal-content .modal-footer button{
+	margin-top: 0;
+}
+.modal-content .form-block{
+	margin: 0 auto;
+}
 /*hover effect for img*/
 .grid {
 	position: relative;
@@ -211,6 +234,7 @@ figure.effect-julia:hover img {
 
 .header {
 	position: relative;
+	background-color: #575671;
 }
 .header-content{
 	position: absolute;
@@ -672,23 +696,6 @@ figure.effect-julia:hover img {
 	width: 180px;
 	height: 180px;
 }
-/*.video-types .v-type-wrap .img-shadow{
-	background: #777;
-	opacity: 0.5;
-	display: inline-block;
-	width: 182px;
-	height: 182px;
-	position: absolute;
-	left: 3px;
-	top: 3px;
-	border: 1px solid #000;
-	transition: all 0.1s ease-out;
-}
-.video-types .v-type-wrap .img-shadow:hover,
-.video-types .v-type-wrap .img-shadow.hovered {
-	opacity: 0;
-	transition: all 0.1s ease-out;
-}*/
 .video-types .v-type-title{
 	color: #fff;
 	position: absolute;
@@ -1241,15 +1248,15 @@ figure.effect-julia:hover img {
 	text-align: center;
 	top: 0;
 	left: 50%;
-	margin-left: -330px;
+	margin-left: -285px;
 	
 }
 .map .info-place{
 	margin: 0 auto;
-	width: 660px;
-	border-top: 330px solid #fff;
-	border-left: 330px solid transparent; 
-	border-right: 330px solid transparent;
+	width: 570px;
+	border-top: 285px solid #fff;
+	border-left: 285px solid transparent; 
+	border-right: 285px solid transparent;
 }
 .map .info-text{
 	position: absolute;
@@ -1258,8 +1265,11 @@ figure.effect-julia:hover img {
 	width: 100%;
 }
 .map .details{
-	width: 300px;
+	width: 270px;
 	margin: 0 auto;
+}
+.map .details p{
+	margin-bottom: 5px;
 }
 .map .details .red-text{
 	color: #e05750;

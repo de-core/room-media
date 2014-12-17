@@ -30,11 +30,11 @@ var app_c=angular.module('roomControllers', []);
 		var mapContainer = document.getElementById('map-place');
 		mapContainer.style.width = '100%';
 		mapContainer.style.height = '650px';
-		var center = new google.maps.LatLng(55.7869, 37.653921);
+		var center = new google.maps.LatLng(55.7866,37.6539);
 		$scope.initialize = function() {
 			var mapOptions = {
 				center: center,
-				zoom: 17,
+				zoom: 15,
 				scrollwheel: false,
 				draggable : false,
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
