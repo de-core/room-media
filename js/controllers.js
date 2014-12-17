@@ -3,7 +3,7 @@
 /* Controllers */
 var app_c=angular.module('roomControllers', []);
 
-	app_c.controller('videoController', [ '$scope', '$http', function($scope, $http){
+	app_c.controller('generalController', [ '$scope', '$http', function($scope, $http){
 		$http.get('data/favourite-projects.json').success(function(data){
 			$scope.favorites = data;
 		}).error(function(data){
@@ -12,6 +12,24 @@ var app_c=angular.module('roomControllers', []);
 		$scope.videoPlay = function(value){
 			$scope.selected = value;
 		}
+		
+		var googleForm = $(window).jqGoogleForms({"formKey": "1f4DkP_zXeRJJDsKv-4cOiqkcFdLc13xSLV7sNey_6fM"});
+	  $('.form .btn-submit').click(function(e){
+	    e.preventDefault();
+	    var form = $(this).parents('.form');
+	    var name = form.find('#name').val();
+	    var email = form.find('#email').val();
+	    var phone = form.find('#phone').val();
+	    googleForm.sendFormData({
+	        "entry.1352981750": name,
+	        "entry.2072700322": email,
+	        "entry.1778561209": phone
+	    });
+	    // if (name && phone) {
+	    //   $('.alert-container').removeClass('hidden');
+	    // }
+	    $('.modal').modal('hide');
+	  });
 	}]);
 
 	app_c.controller('galleryImage', [ '$scope', '$http', function($scope, $http){
@@ -25,7 +43,6 @@ var app_c=angular.module('roomControllers', []);
 		}
 
 	}]);
-
 	app_c.controller('googleMap', ['$scope', function($scope) {
 		var mapContainer = document.getElementById('map-place');
 		mapContainer.style.width = '100%';
