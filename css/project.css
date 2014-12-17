@@ -244,7 +244,7 @@ figure.effect-julia:hover img {
 .header-content{
 	position: absolute;
 	width: 100%;
-	padding: 60px 0;
+	padding: 30px 0;
 	top: 0;
 	left: 0;
 }
@@ -302,14 +302,15 @@ figure.effect-julia:hover img {
 	border: 1px solid #fff;
 	padding: 0 27px 4px;
 	display: inline-block;
-	margin-bottom: 68px;
+	margin-bottom: 30px;
 }
 .header-left .menu a{
 	color: #fff;
 	font-size: 20px;
 }
 .header-left .logo img{
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+	width: 300px;
 }
 .header-left .video-frame{
 	display: block;
@@ -512,9 +513,13 @@ figure.effect-julia:hover img {
 	}
 }
 @media (min-width: 1280px){
+	.header .header-content{
+		padding: 50px 0;
+	}
 	.header .header-left{
 		width: 60%;
 	}
+
 	.header-left .bg-lines.line-1{
 		top: 270px;
 		left: 23%;
@@ -539,16 +544,23 @@ figure.effect-julia:hover img {
 		top: 710px;
 		left: 90%;
 	}
+	.header-left .logo img{
+		margin-bottom: 50px;
+		margin-left: 88px;
+		width: 400px;
+	}
 	.header-left .menu-sign{
 		margin-left: 102px;
+	}
+	.header-left .menu{
+		margin-bottom: 50px;
 	}
 	.header-left .menu li+li{
 		margin-left: 35px;
 	}
-	.header-left .logo img{
+/*	.header-left .logo img{
 		margin-bottom: 120px;
-		margin-left: 88px;
-	}
+	}*/
 	.header-left .video-frame{
 		min-width: 600px;
 	}
