@@ -20,7 +20,7 @@
 				var googleForm = $(window).jqGoogleForms({"formKey": "1f4DkP_zXeRJJDsKv-4cOiqkcFdLc13xSLV7sNey_6fM"});
 				$('.form-custom .btn-submit').click(function(e){
 					console.log('work')
-					// e.preventDefault();
+					e.preventDefault();
 					var form = $(this).parents('form');
 					var name = form.find('#name').val();
 					var email = form.find('#email').val();
