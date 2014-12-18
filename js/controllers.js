@@ -12,7 +12,24 @@ var app_c=angular.module('roomControllers', []);
 		$scope.videoPlay = function(value){
 			$scope.selected = value;
 		}
-
+		$scope.sendForm = function(){
+					var googleForm = $(window).jqGoogleForms({"formKey": "1f4DkP_zXeRJJDsKv-4cOiqkcFdLc13xSLV7sNey_6fM"});
+					console.log('work')
+					// e.preventDefault();
+					var form = $(this).parents('.form-custom');
+					var name = form.find('#name').val();
+					var email = form.find('#email').val();
+					var phone = form.find('#phone').val();
+					googleForm.sendFormData({
+					  "entry.1352981750": name,
+					  "entry.2072700322": email,
+					  "entry.1778561209": phone
+					});
+					// if (name && phone) {
+					//   $('.alert-container').removeClass('hidden');
+					// }
+					$('.modal').modal('hide');
+				};
 		// var googleForm = $(document).jqGoogleForms({"formKey": "1f4DkP_zXeRJJDsKv-4cOiqkcFdLc13xSLV7sNey_6fM"});
 	 //  $('.form-custom .btn-submit').click(function(e){
 	 //    e.preventDefault();
