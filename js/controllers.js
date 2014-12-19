@@ -9,10 +9,31 @@ var app_c=angular.module('roomControllers', []);
 		}).error(function(data){
 			alert("Data json Error");
 		});
+		$http.get('data/projects.json').success(function(data){
+			$scope.photos = data;
+		}).error(function(data){
+			alert("Data json Error");
+		});
+		
+		$scope.getindex = 0;
 		$scope.videoPlay = function(value){
 			$scope.selected = value;
 		}
-		
+		$scope.setVideo = function(value, index){
+			$scope.selected=value;
+			$scope.getindex=index;
+		}
+
+		$scope.showNext = function () {
+			if ($scope.getindex < $scope.photos.length - 1){
+				$scope.getindex = ++$scope.getindex;
+			}
+		};
+		$scope.showPrev = function () {
+			if ($scope.getindex>0){
+				$scope.getindex = --$scope.getindex;
+			}
+		};
 		// var googleForm = $(document).jqGoogleForms({"formKey": "1f4DkP_zXeRJJDsKv-4cOiqkcFdLc13xSLV7sNey_6fM"});
 	 //  $('.form-custom .btn-submit').click(function(e){
 	 //    e.preventDefault();
@@ -33,17 +54,6 @@ var app_c=angular.module('roomControllers', []);
 	 //  });
 	}]);
 
-	app_c.controller('galleryImage', [ '$scope', '$http', function($scope, $http){
-		$http.get('data/projects.json').success(function(data){
-			$scope.photos = data;
-		}).error(function(data){
-			alert("Data json Error");
-		});
-		$scope.setVideo = function(value){
-			$scope.selected=value;
-		}
-
-	}]);
 	app_c.controller('googleMap', ['$scope', function($scope) {
 		var mapContainer = document.getElementById('map-place');
 		mapContainer.style.width = '100%';

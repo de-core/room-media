@@ -1,13 +1,13 @@
-<section class="gallery clearfix" id="gallery" ng-controller="galleryImage">
-	<div class="container">
+<section class="gallery clearfix" id="gallery">
+<!-- 	<div class="container" slider-video>
 		<div class="video-place">
 			<div youtube-video video-url="selected"></div>
 		</div>
-	</div>
+	</div> -->
 	<div class="images">
 		<div class="grid">
 			<figure class="effect-julia" ng-repeat="photo in photos | limitTo:24">
-				<img ng-src="{{photo.img}}" ng-click="setVideo(photo.videourl);">
+				<img ng-src="{{photo.img}}" ng-click="setVideo(photo.videourl, $index)" data-target="#modal-video" data-toggle="modal">
 			</figure>
 		</div>
 	</div>

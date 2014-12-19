@@ -4,6 +4,8 @@
 
 var app=angular.module('roomApp', 
 	[
+		'ngAnimate',
+		'ngTouch',
 		'roomControllers',
 		'scriptsDirectives',
 		'youtube-embed'
