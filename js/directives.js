@@ -17,15 +17,36 @@
 		});
 		// app_d.directive('sliderVideo', function(){
 		// 	return function(scope, element, attrs){
-		// 		$('.gallery .fotorama').load(function(){
-		// 			$('.gallery .fotorama').fotorama({
-		// 				width: '100%',
-		// 				height: '500px'
-		// 			});
-
-		// 		})
+		// 		$('#iview').iView({
+		// 			// width: '100%',
+		// 			// height: '500px',
+		// 			// data: photos.videourl
+		// 		});
 		// 	}
 		// });
+	app_d.directive('fancyBox', function(){
+		return function(scope, element, attrs){
+			$('.fancybox').click(function(e){
+				e.preventDefault();
+				$.fancybox({
+						openEffect  : 'none',
+						closeEffect : 'none',
+						prevEffect	: 'none',
+						nextEffect	: 'none',
+						// helpers : {
+						// 	buttons : {},
+						// },
+						nextClick : true,
+						type : 'iframe',
+						href			: this.href.replace(new RegExp('watch\\?v=', 'i'), 'embed/'),
+						// type          : 'swf',
+      //       swf           : {
+      //           allowfullscreen   : true
+      //       }
+				});
+			});
+		}
+	});
 		app_d.directive('hoverEffect', function(){
 			return function(scope, element, attrs){
 				element.bind('mouseenter', function(e){

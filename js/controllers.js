@@ -14,7 +14,12 @@ var app_c=angular.module('roomControllers', []);
 		}).error(function(data){
 			alert("Data json Error");
 		});
-		
+		// $scope.options = {
+		// 	width: '100%',
+		// 	height: 400,
+		// 	loop: true,
+		// 	keyboard: true
+		// }
 		$scope.getindex = 0;
 		$scope.videoPlay = function(value){
 			$scope.selected = value;
