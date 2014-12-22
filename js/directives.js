@@ -53,14 +53,15 @@
 		});
 
 		app_d.directive('sendForm', function(){
+			var googleForm = $(window).jqGoogleForms({"formKey": "1f4DkP_zXeRJJDsKv-4cOiqkcFdLc13xSLV7sNey_6fM"});
 			return function(scope, element, attrs){
 				$('.form-custom .btn-submit').click(function(e){
-					var googleForm = $(window).jqGoogleForms({"formKey": "1f4DkP_zXeRJJDsKv-4cOiqkcFdLc13xSLV7sNey_6fM"});
 					e.preventDefault();
-					var form = $(this).parent('.form-custom');
-					var formId = form.attr('id');
+					var form = $(this).parents('.form-custom');
 					var name = form.find('#name').val();
+					  console.log(name)
 					var email = form.find('#email').val();
+					console.log(email)
 					var phone = form.find('#phone').val();
 					googleForm.sendFormData({
 					  "entry.1352981750": name,
@@ -69,7 +70,6 @@
 					});
 					if (name && phone) {
 					  $('#modal-success').modal('show');
-					  console.log(formId)
 					}
 					// formId.resetForm();
 					$('#modal-request').modal('hide');
