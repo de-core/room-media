@@ -1,23 +1,15 @@
-<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal-video modal modal-big fade" id="modal-video" role="dialog" tabindex="-1" fancy-box>
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal-video modal modal-big fade" id="modal-video" role="dialog" tabindex="-1">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
 			<div class="modal-body text-center">
-				<!-- <div youtube-video video-url="selected"></div> -->
-				<!-- <div class="slider">
+				<div class="slider">
 					<div ng-repeat="photo in photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="$index==getindex">
-						<div youtube-video  video-url="photo.videourl" player-width="'100%'" player-height="'100%'"></div>
+						<div class="video" youtube-video  video-url="photo.videourl" player-width="'100%'" player-height="'100%'" player="best.player"></div>
 					</div>
 					<a class="arrow prev" href="" ng-click="showPrev()"></a>
 					<a class="arrow next" href="" ng-click="showNext()"></a>
-				</div> -->
-				<!-- <div ap-fotorama="options" ng-model="photos.videourl"></div> -->
-				<<!-- ul>
-
-					<li ng-repeat="photo in photos">
-						<a class="fancybox" href="{{image.url}}"></a>
-					</li>
-				</ul> -->
+				</div>
 			</div>
 		</div>
 	</div>

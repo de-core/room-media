@@ -8,10 +8,11 @@
 		<!-- <div id="iview">
 			<div ng-repeat="photo in photos | limitTo:24" youtube-video video-url="photo.videourl"></div>
 		</div> -->
-		<ul class="grid">
-			<li class="effect-julia figure" ng-repeat="photo in photos | limitTo:24">
-				<a class="fancybox" rel="gallery" href="{{photo.videourl}}" fancy-box><img ng-src="{{photo.img}}"></a>
-			</li>
-		</ul>
+				<!-- <a class="fancybox" rel="gallery" href="{{photo.videourl}}" fancy-box><img ng-src="{{photo.img}}"></a> -->
+		<div class="grid">
+			<figure class="effect-julia" ng-repeat="photo in photos | limitTo:24">
+				<img ng-src="{{photo.img}}" ng-click="setVideo(photo.videourl, $index)" data-target="#modal-video" data-toggle="modal">
+			</figure>
+		</div>
 	</div>
 </section>

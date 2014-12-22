@@ -14,13 +14,15 @@ var app_c=angular.module('roomControllers', []);
 		}).error(function(data){
 			alert("Data json Error");
 		});
-		// $scope.options = {
-		// 	width: '100%',
-		// 	height: 400,
-		// 	loop: true,
-		// 	keyboard: true
-		// }
+
+		$scope.$on('youtube.player.playing', function ($event, player) {
+			$('.slider .arrow').click(function(){
+				player.stopVideo();
+			})
+		});
+
 		$scope.getindex = 0;
+
 		$scope.videoPlay = function(value){
 			$scope.selected = value;
 		}
@@ -39,24 +41,7 @@ var app_c=angular.module('roomControllers', []);
 				$scope.getindex = --$scope.getindex;
 			}
 		};
-		// var googleForm = $(document).jqGoogleForms({"formKey": "1f4DkP_zXeRJJDsKv-4cOiqkcFdLc13xSLV7sNey_6fM"});
-	 //  $('.form-custom .btn-submit').click(function(e){
-	 //    e.preventDefault();
-	 //    var form = $(this).parents('.form-custom');
-	 //    var name = form.find('#name').val();
-	 //    var email = form.find('#email').val();
-	 //    var phone = form.find('#phone').val();
-	 //    googleForm.sendFormData({
-	 //        "entry.1352981750": name,
-	 //        "entry.2072700322": email,
-	 //        "entry.1778561209": phone
-	 //    });
-	 //    // if (name && phone) {
-	 //    //   $('.alert-container').removeClass('hidden');
-	 //    // }
-	 //    $('.modal').modal('hide');
-	 //    console.log('work')
-	 //  });
+
 	}]);
 
 	app_c.controller('googleMap', ['$scope', function($scope) {

@@ -15,38 +15,30 @@
 				});
 			}
 		});
-		// app_d.directive('sliderVideo', function(){
-		// 	return function(scope, element, attrs){
-		// 		$('#iview').iView({
-		// 			// width: '100%',
-		// 			// height: '500px',
-		// 			// data: photos.videourl
-		// 		});
-		// 	}
-		// });
-	app_d.directive('fancyBox', function(){
-		return function(scope, element, attrs){
-			$('.fancybox').click(function(e){
-				e.preventDefault();
-				$.fancybox({
-						openEffect  : 'none',
-						closeEffect : 'none',
-						prevEffect	: 'none',
-						nextEffect	: 'none',
-						// helpers : {
-						// 	buttons : {},
-						// },
-						nextClick : true,
-						type : 'iframe',
-						href			: this.href.replace(new RegExp('watch\\?v=', 'i'), 'embed/'),
-						// type          : 'swf',
-      //       swf           : {
-      //           allowfullscreen   : true
-      //       }
-				});
-			});
-		}
-	});
+
+	// app_d.directive('fancyBox', function(){
+	// 	return function(scope, element, attrs){
+	// 		$('.fancybox').click(function(e){
+	// 			e.preventDefault();
+	// 			$.fancybox({
+	// 					openEffect  : 'none',
+	// 					closeEffect : 'none',
+	// 					prevEffect	: 'none',
+	// 					nextEffect	: 'none',
+	// 					// helpers : {
+	// 					// 	buttons : {},
+	// 					// },
+	// 					nextClick : true,
+	// 					type : 'iframe',
+	// 					href			: this.href.replace(new RegExp('watch\\?v=', 'i'), 'embed/'),
+	// 					// type          : 'swf',
+ //      //       swf           : {
+ //      //           allowfullscreen   : true
+ //      //       }
+	// 			});
+	// 		});
+	// 	}
+	// });
 		app_d.directive('hoverEffect', function(){
 			return function(scope, element, attrs){
 				element.bind('mouseenter', function(e){
@@ -57,8 +49,6 @@
 					e.preventDefault();
 					element.parent().find('.v-type-wrap figure img').removeClass('hovered');
 				});
-
-				// $('#iview').iView();
 			}
 		});
 
@@ -66,9 +56,9 @@
 			return function(scope, element, attrs){
 				$('.form-custom .btn-submit').click(function(e){
 					var googleForm = $(window).jqGoogleForms({"formKey": "1f4DkP_zXeRJJDsKv-4cOiqkcFdLc13xSLV7sNey_6fM"});
-					console.log('work')
 					e.preventDefault();
-					var form = $(this).parents('.form-custom');
+					var form = $(this).parent('.form-custom');
+					var formId = form.attr('id');
 					var name = form.find('#name').val();
 					var email = form.find('#email').val();
 					var phone = form.find('#phone').val();
@@ -77,10 +67,12 @@
 					  "entry.2072700322": email,
 					  "entry.1778561209": phone
 					});
-					// if (name && phone) {
-					//   $('.alert-container').removeClass('hidden');
-					// }
-					$('.modal').modal('hide');
+					if (name && phone) {
+					  $('#modal-success').modal('show');
+					  console.log(formId)
+					}
+					// formId.resetForm();
+					$('#modal-request').modal('hide');
 				});
 			}
 		});
