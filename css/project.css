@@ -52,8 +52,8 @@ body{
 	font-family: 'open_sansregular';
 }
 @media (min-width: 940px) { body { overflow-x: hidden; } }
-@media (min-width: 1350px) { 
-	.container { width: 1332px !important; }
+@media (min-width: 1500px) { 
+	.container { width: 1350px !important; }
 }
 
 /*form styles*/
@@ -164,7 +164,7 @@ body{
 	padding: 5px 25px;
 	line-height: 16px;
 }
-@media (max-width: 1349px){
+@media (max-width: 1499px){
 	.form-block{
 		margin: 0;
 	}
@@ -562,7 +562,7 @@ figure.effect-julia:hover img {
 	line-height: 21px;
 	margin-bottom: 15px;
 }
-@media (max-width: 1349px){
+@media (max-width: 1499px){
 	.header-content{
 		padding: 20px 0 30px;
 	}
@@ -729,7 +729,7 @@ figure.effect-julia:hover img {
 		margin: 0
 	}
 }
-@media (min-width: 1350px){
+@media (min-width: 1500px){
 	.header .header-content{
 		padding: 50px 0;
 	}
@@ -861,7 +861,7 @@ figure.effect-julia:hover img {
 		display: none;
 	}
 }
-@media (min-width: 768px) and (max-width: 1349px){
+@media (min-width: 768px) and (max-width: 1499px){
 	.clients .bg-lines.line-1{
 		left: 5%;
 	}
@@ -981,7 +981,7 @@ figure.effect-julia:hover img {
 	color: #555;
 	text-decoration: none;
 }
-@media (min-width: 1350px){
+@media (min-width: 1500px){
 	.video-types p{
 		line-height: 38px;
 		margin-bottom: 5px;
@@ -1075,7 +1075,7 @@ figure.effect-julia:hover img {
 	text-decoration: none;
 	border-bottom: 2px solid transparent;
 }
-@media (min-width: 1350px){
+@media (min-width: 1500px){
 	.our-favourites .second-row, .our-favourites .third-row{
 		margin-top: -190px;
 	}
@@ -1090,7 +1090,7 @@ figure.effect-julia:hover img {
 		margin-left: 110px
 	}
 }
-@media (max-width: 1349px){
+@media (max-width: 1499px){
 	.our-favourites .first-row{
 		margin-top: 150px;
 	}
@@ -1230,7 +1230,7 @@ figure.effect-julia:hover img {
 	}
 	
 }
-@media (min-width: 1350px){
+@media (min-width: 1500px){
 	.order-instr .second-row .line{
 		width: 295px;
 	}
@@ -1410,7 +1410,7 @@ figure.effect-julia:hover img {
 	margin-top: 90px;
 }
 
-@media (min-width: 1350px){
+@media (min-width: 1500px){
 	.why-us .first-row .why-item:nth-child(odd){
 		margin-top: 160px;
 	}
@@ -1423,7 +1423,7 @@ figure.effect-julia:hover img {
 		width: 110px;
 	}
 }
-@media (min-width: 1024px) and (max-width: 1349px){
+@media (min-width: 1024px) and (max-width: 1499px){
 	/*.why-us .first-row .why-item:nth-child(3){
 		margin-top: 40px;
 	}
@@ -1626,7 +1626,7 @@ figure.effect-julia:hover img {
 	font-size: 25px;
 	margin-top: 10px;
 }
-@media (min-width: 1350px){
+@media (min-width: 1500px){
 	.footer h3{
 		margin-left: 395px;
 		text-align: left;
