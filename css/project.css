@@ -398,12 +398,13 @@ figure.effect-julia:hover img {
 .header-content{
 	position: absolute;
 	width: 100%;
-	padding: 30px 0;
+	padding: 30px 0 0;
 	top: 0;
 	left: 0;
 }
 .header .header-left{
 	position: relative;
+	margin-bottom: 20px;
 }
 .header-left .bg-lines{
 	position: absolute;
@@ -493,6 +494,7 @@ figure.effect-julia:hover img {
 .header-right{
 	color: #fff;
 	text-align: center;
+	margin-bottom: 20px;
 }
 .header-right .contacts{
 	margin-bottom: 35px;
@@ -564,17 +566,17 @@ figure.effect-julia:hover img {
 }
 @media (max-width: 1499px){
 	.header-content{
-		padding: 20px 0 30px;
+		padding: 20px 0 0;
 	}
 	.header-left .menu-sign:before{
 		width: 30px;
-		height: 12px;
+		height: 14px;
 		border-top: 3px solid #fff;
 		border-bottom: 2px solid #fff;
 	}
 	.header-left .menu-sign:after{
 		width: 30px;
-		height: 14px;
+		height: 13px;
 		border-top: 1px solid #fff;
 		border-bottom: 3px solid #fff;
 	}
