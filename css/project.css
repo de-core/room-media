@@ -164,6 +164,35 @@ body{
 	padding: 5px 25px;
 	line-height: 16px;
 }
+@media (max-width: 1279px){
+	.form-block{
+		margin: 0;
+	}
+	.form-custom .input-field{
+		margin-bottom: 10px;
+	}
+	.form-custom button.btn {
+		margin-top: 25px;
+		line-height: 13px;
+		font-size: 13px;
+	}
+	.form-custom input{
+		padding: 0;
+		height: 25px;
+	}
+	.form-custom input::-webkit-input-placeholder {
+		font-size: 17px;
+	}
+	.form-custom input::-moz-placeholder{
+		font-size: 17px;
+	}
+	.form-custom input:-moz-placeholder{
+		font-size: 17px;
+	}
+	.form-custom input:-ms-input-placeholder{
+		font-size: 17px;
+	}
+}
 
 .modal-request .modal-dialog{
 	margin: 50px auto;
@@ -534,16 +563,67 @@ figure.effect-julia:hover img {
 	margin-bottom: 15px;
 }
 @media (max-width: 1279px){
+	.header-content{
+		padding: 20px 0;
+	}
+	.header-left .menu-sign:before{
+		width: 30px;
+		height: 12px;
+		border-top: 3px solid #fff;
+		border-bottom: 2px solid #fff;
+	}
+	.header-left .menu-sign:after{
+		width: 30px;
+		height: 14px;
+		border-top: 1px solid #fff;
+		border-bottom: 3px solid #fff;
+	}
+	.header-left .logo img{
+		width: 240px;
+		margin-bottom: 25px;
+	}
+	.header-left .video-frame{
+		height: 280px;
+	}
+	.header-left .menu a{
+		font-size: 15px;
+		padding-bottom: 2px;
+	}
 	.header-left .services{
-		margin-top: 50px;
+		margin-top: 30px;
+	}
+	.header-left .img-wrap{
+		margin-bottom: 10px;
+	}
+	.header-left .services img{
+		width: 40px;
 	}
 	.header-left .services p{
 		margin: 0 auto;
 		max-width: 400px;
 		margin-bottom: 20px;
+		font-size: 12px;
+		line-height: 18px;
 	}
-	.header-right .form-block{
-		margin: 0 auto;
+	.header-right .contacts{
+		margin: 10px 0 20px;
+	}
+	.header-right .contacts h5{
+		font-size: 15px !important;
+		margin-top: 20px;
+	}
+	.header-right .contacts a.mail-to{
+		font-size: 18px;
+	}
+	.header .header-right h2{
+		font-size: 22px !important;
+	}
+	.header-right .main-title{
+		margin: 20px 0;
+	}
+	.header-right .main-title span {
+		padding: 0px 8px 3px;
+		line-height: 22px;
 	}
 }
 @media (max-width: 677px){
@@ -606,7 +686,7 @@ figure.effect-julia:hover img {
 }
 @media (min-width: 1024px){
 	.header .header-left{
-		width: 56%;
+		width: 58%;
 		float: left;
 	}
 	.header-left .bg-lines.line-1{
@@ -637,13 +717,13 @@ figure.effect-julia:hover img {
 		margin-bottom: 0;
 	}
 	.header .header-right{
-		width: 44%;
+		width: 42%;
 		text-align: left;
 		float: right;
-		padding-left: 47px;
+		padding-left: 60px;
 	}
-	.header .header-right h2{
-		font-size: 30px !important;
+	.header .header-right .form-block{
+		margin: 0
 	}
 }
 @media (min-width: 1280px){
