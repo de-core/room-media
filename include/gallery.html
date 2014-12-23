@@ -11,7 +11,7 @@
 				<!-- <a class="fancybox" rel="gallery" href="{{photo.videourl}}" fancy-box><img ng-src="{{photo.img}}"></a> -->
 		<div class="grid">
 			<figure class="effect-julia" ng-repeat="photo in photos" ng-show="$index>5 && $index<30">
-				<img ng-src="{{photo.img}}" ng-click="setVideo(photo.videourl, $index)" data-target="#modal-gallery" data-toggle="modal">
+				<img ng-src="{{photo.img}}" ng-click="setVideo(photo.videourl, $index)" data-target="#modal-video" data-toggle="modal">
 			</figure>
 		</div>
 	</div>
