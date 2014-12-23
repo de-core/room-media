@@ -4,11 +4,11 @@
 var app_c=angular.module('roomControllers', []);
 
 	app_c.controller('generalController', [ '$scope', '$http', function($scope, $http){
-		$http.get('data/favourite-projects.json').success(function(data){
-			$scope.favorites = data;
-		}).error(function(data){
-			alert("Data json Error");
-		});
+		// $http.get('data/favourite-projects.json').success(function(data){
+		// 	$scope.favorites = data;
+		// }).error(function(data){
+		// 	alert("Data json Error");
+		// });
 		$http.get('data/projects.json').success(function(data){
 			$scope.photos = data;
 		}).error(function(data){
@@ -23,8 +23,9 @@ var app_c=angular.module('roomControllers', []);
 
 		$scope.getindex = 0;
 
-		$scope.videoPlay = function(value){
+		$scope.videoPlay = function(value, index){
 			$scope.selected = value;
+			$scope.getindex=index;
 		}
 		$scope.setVideo = function(value, index){
 			$scope.selected=value;
@@ -32,7 +33,7 @@ var app_c=angular.module('roomControllers', []);
 		}
 
 		$scope.showNext = function () {
-			if ($scope.getindex < $scope.photos.length - 1){
+			if ($scope.getindex < ($scope.photos.length - 1)){
 				$scope.getindex = ++$scope.getindex;
 			}
 		};

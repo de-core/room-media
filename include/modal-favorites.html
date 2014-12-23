@@ -1,13 +1,13 @@
-<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal-video modal-gallery modal modal-big fade" id="modal-gallery" role="dialog" tabindex="-1">
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal-video modal-favorites modal modal-big fade" id="modal-favorites" role="dialog" tabindex="-1">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
 			<div class="modal-body text-center">
 				<div class="slider">
-					<div ng-repeat="photo in photos | limitTo:24" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="$index==getindex">
+					<div ng-repeat="photo in favorites | limitTo:6" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="$index==getindex">
 						<div class="video" youtube-video  video-url="photo.videourl" player-width="'100%'" player-height="'100%'" player="best.player"></div>
 					</div>
-					<a class="arrow prev" href="" ng-click="showPrev(photos)"></a>
+					<a class="arrow prev" href="" ng-click="showPrev(favorites)"></a>
 					<a class="arrow next" href="" ng-click="showNext()"></a>
 				</div>
 			</div>
