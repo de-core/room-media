@@ -91,16 +91,19 @@
 		});
 
 
-		app_d.directive('blockHeight', function(){
+		app_d.directive('blockHeight', function($timeout){
 			return function(scope, element, attrs){
-				$(window).load(function(){
-					var h = element.find('.content').outerHeight();
-					console.log("load"+h)
-					element.find('.fotorama').fotorama({
-						height: h,
-						width: '100%',
-						fit: 'cover'
-					});
+				$(document).ready(function(){
+					$timeout(function(){
+						var h = element.find('.content').outerHeight();
+						console.log("load"+h)
+						element.find('.fotorama').fotorama({
+							height: h,
+							width: '100%',
+							fit: 'cover'
+						});
+					}, 3000);
+					
 				});
 				enquire.register("screen and (max-width:320px)", {
 					match : function() {
