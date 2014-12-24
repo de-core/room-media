@@ -161,9 +161,10 @@ body{
 	background: #fff !important;
 	color: #2f174f !important;
 	white-space: pre-line;
+	font-weight: bold;
 	margin-top: 34px;
 	padding: 5px 25px;
-	/*line-height: 16px;*/
+	line-height: 16px;
 }
 @media (max-width: 1499px){
 	.form-block{
@@ -555,12 +556,12 @@ figure.effect-julia:hover img {
 }
 .header-right .main-title span{
 	background: #fff;
-	padding: 1px 8px 10px;
+	padding: 0px 8px 5px;
 	margin-bottom: 5px;
 	display: inline-block;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	color: #2f174f;
-	line-height: 32px;
+	line-height: 36px;
 }
 .header-right .form-custom{
 	width: 260px;
