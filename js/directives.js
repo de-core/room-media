@@ -94,13 +94,14 @@
 		app_d.directive('blockHeight', function(){
 			return function(scope, element, attrs){
 				$(window).load(function(){
-					// var h = element.find('.content').outerHeight();
-					// console.log("load"+h)
-					// element.find('.fotorama').fotorama({
-					// 	height: h,
-					// 	width: '100%',
-					// 	fit: 'cover'
-					// });
+					var h = element.find('.content').outerHeight();
+					console.log("load"+h)
+					element.find('.fotorama').fotorama({
+						height: h,
+						width: '100%',
+						fit: 'cover'
+					});
+				});
 				enquire.register("screen and (max-width:320px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
@@ -177,7 +178,6 @@
 							fit: 'cover'
 						});
 					},
-				});
 				});
 			}
 		});
