@@ -665,7 +665,7 @@ figure.effect-julia:hover img {
 		margin-bottom: 0;
 	}
 }
-@media (min-width: 600px) and (max-width: 1023px){
+@media (min-width: 600px) and (max-width: 991px){
 	.header-left .bg-lines.line-1{
 		top: 210px;
 		left: 10%;
@@ -691,7 +691,7 @@ figure.effect-julia:hover img {
 		left: 90%;
 	}
 }
-@media (min-width: 1024px){
+@media (min-width: 992px){
 	.header .header-left{
 		width: 58%;
 		float: left;
@@ -1120,7 +1120,7 @@ figure.effect-julia:hover img {
 		height: 150px;
 	}
 }
-@media (max-width: 1023px){
+@media (max-width: 991px){
 	.our-favourites .first-row{
 		margin-top: 130px;
 	}
@@ -1196,7 +1196,7 @@ figure.effect-julia:hover img {
 .order-instr .first-row{
 	margin-bottom: 25px;
 }
-@media (min-width: 1024px){
+@media (min-width: 992px){
 	.order-instr .first-row .instr-wrap:nth-child(even){
 		margin-top: 165px;
 	}
@@ -1252,7 +1252,7 @@ figure.effect-julia:hover img {
 		width: 295px;
 	}
 }
-@media (min-width: 1024px) and (max-width: 1199px){
+@media (min-width: 992px) and (max-width: 1199px){
 	.order-instr .first-row .instr-wrap:nth-child(odd) .line{
 		-webkit-transform: rotate(50deg);
 		-moz-transform: rotate(50deg);
@@ -1302,7 +1302,7 @@ figure.effect-julia:hover img {
 		top: 20px;
 	}
 }
-@media (max-width: 1023px){
+@media (max-width: 991px){
 	.order-instr .first-row .line,
 	.order-instr .second-row .line{
 		width: 0;
@@ -1376,12 +1376,12 @@ figure.effect-julia:hover img {
 		width: 33.33%;
 	}
 }
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 991px){
 	.gallery .images .grid figure{
 		width: 25%;
 	}
 }
-@media (min-width: 1024px) and (max-width: 1599px){
+@media (min-width: 992px) and (max-width: 1599px){
 	.gallery .images .grid figure{
 		width: 16.6%;
 	}
@@ -1440,7 +1440,7 @@ figure.effect-julia:hover img {
 		width: 110px;
 	}
 }
-@media (min-width: 1024px) and (max-width: 1499px){
+@media (min-width: 992px) and (max-width: 1499px){
 	/*.why-us .first-row .why-item:nth-child(3){
 		margin-top: 40px;
 	}
@@ -1537,7 +1537,7 @@ figure.effect-julia:hover img {
 		display: inline-block;
 	}
 }
-@media (min-width: 1024px){
+@media (min-width: 992px){
 	.partner-request-content{
 		padding: 30px 0 70px;
 	}
