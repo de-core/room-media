@@ -48,7 +48,7 @@ var app_c=angular.module('roomControllers', []);
 	app_c.controller('googleMap', ['$scope', function($scope) {
 		var mapContainer = document.getElementById('map-place');
 		mapContainer.style.width = '100%';
-		mapContainer.style.height = '650px';
+		mapContainer.style.height = '600px';
 		var center = new google.maps.LatLng(55.7866,37.6539);
 		$scope.initialize = function() {
 			var mapOptions = {

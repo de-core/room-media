@@ -1,7 +1,8 @@
 /*Fonts style classes------------------------------------------------*/
 
-.exo-reg { font-family: 'exo-two-regular';}
-.exo-medium { font-family: 'exo_2.0medium';}
+.exo-reg { font-family: 'exo-two-regular'; }
+
+.exo-medium { font-family: 'exo_2.0medium'; }
 .exo-light { font-family: 'exo_2.0light'; }
 .exo-extralight { font-family: 'exo_2.0extra_light'; }
 .exo-bold { font-family: 'exo_2.0bold'; }
@@ -126,7 +127,7 @@ body{
 	color: white;
 	font-family: 'exo-two-regular';
 	font-size: 20px;
-	line-height: 30px;
+	/*line-height: 30px;*/
 }
 .form-custom input:focus::-webkit-input-placeholder{
 	color: transparent;
@@ -162,7 +163,7 @@ body{
 	white-space: pre-line;
 	margin-top: 34px;
 	padding: 5px 25px;
-	line-height: 16px;
+	/*line-height: 16px;*/
 }
 @media (max-width: 1499px){
 	.form-block{
@@ -173,7 +174,7 @@ body{
 	}
 	.form-custom button.btn {
 		margin-top: 25px;
-		line-height: 13px;
+		/*line-height: 13px;*/
 		font-size: 13px;
 	}
 	.form-custom input{
@@ -398,9 +399,10 @@ figure.effect-julia:hover img {
 .header-content{
 	position: absolute;
 	width: 100%;
-	padding: 30px 0 0;
+	padding: 30px 0;
 	top: 0;
 	left: 0;
+	height: auto;
 }
 .header .header-left{
 	position: relative;
@@ -477,7 +479,7 @@ figure.effect-julia:hover img {
 	width: 100%;
 	position: relative;
 	z-index: 1;
-	height: 280px;
+	height: 350px;
 }
 .header-left .services{
 	margin-bottom: 60px;
@@ -496,7 +498,6 @@ figure.effect-julia:hover img {
 .header-right{
 	color: #fff;
 	text-align: center;
-	margin-bottom: 20px;
 }
 .header-right .contacts{
 	margin-bottom: 35px;
@@ -562,13 +563,16 @@ figure.effect-julia:hover img {
 .header-right .form-custom{
 	width: 260px;
 }
+.header-right .form-block{
+	margin: 0 auto;
+}
 .header-right .form-block p{
 	line-height: 21px;
 	margin-bottom: 15px;
 }
 @media (max-width: 1499px){
 	.header-content{
-		padding: 20px 0 0;
+		padding: 20px 0;
 	}
 	.header-left .menu-sign:before{
 		width: 30px;
@@ -602,7 +606,6 @@ figure.effect-julia:hover img {
 	.header-left .services p{
 		margin: 0 auto;
 		max-width: 400px;
-		margin-bottom: 20px;
 		font-size: 12px;
 		line-height: 18px;
 	}
@@ -638,7 +641,7 @@ figure.effect-julia:hover img {
 	}
 	.header .header-left .menu{
 		width: 100%;
-		margin-top: 30px;
+		margin-top: 70px;
 		margin-bottom: 0;
 	}
 	.header .header-left .menu li{
@@ -646,13 +649,16 @@ figure.effect-julia:hover img {
 	}
 	.header .header-left .logo{
 		position: absolute;
-		top: -45px;
+		top: 0;
 	}
 	.header .header-left .logo img{
 		width: 250px;
 	}
 	.header .header-left iframe{
 		display: none;
+	}
+	.header-left .services p{
+		margin-bottom: 20px;
 	}
 	.header .header-right .main-title span{
 		display: block;
@@ -738,7 +744,7 @@ figure.effect-julia:hover img {
 }
 @media (min-width: 1500px){
 	.header .header-content{
-		padding: 50px 0;
+		padding: 50px 0 20px;
 	}
 	.header .header-left{
 		width: 60%;
@@ -994,6 +1000,9 @@ figure.effect-julia:hover img {
 		line-height: 38px;
 		margin-bottom: 5px;
 		font-size: 18px;
+	}
+	.video-types .v-type-title h5{
+		max-width: 55%;
 	}
 }
 .video-types .lines img{
@@ -1484,8 +1493,8 @@ figure.effect-julia:hover img {
 	border-top: 22px solid #fff;
 }
 .partner-request-content{
-	line-height: 25px;
-	padding: 80px 0;
+	/*line-height: 25px;*/
+	padding: 20px 0 50px 0;
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -1530,7 +1539,7 @@ figure.effect-julia:hover img {
 }
 @media (min-width: 1024px){
 	.partner-request-content{
-		padding: 80px 0 140px;
+		padding: 30px 0 70px;
 	}
 }
 /*Map*/
@@ -1610,6 +1619,7 @@ figure.effect-julia:hover img {
 	}
 	.social .social-link{
 		display: inline-block;
+		float: left;
 	}
 	.social .social-link:last-child{
 		float: right;
