@@ -89,8 +89,21 @@
 				element.placeholder();
 			}
 		});
+
+
 		app_d.directive('blockHeight', function(){
 			return function(scope, element, attrs){
+				$(window).load(function(){
+					var h=0;
+					console.log("load"+h)
+					var id= document.getElementById('header');
+					h = id.find('.content').outerHeight();
+					$('#header .fotorama').fotorama({
+						height: h,
+						width: '100%',
+						fit: 'cover'
+					});
+				});
 				enquire.register("screen and (max-width:320px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();

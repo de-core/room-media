@@ -15,6 +15,7 @@ var app_c=angular.module('roomControllers', []);
 			alert("Data json Error");
 		});
 
+
 		$scope.$on('youtube.player.playing', function ($event, player) {
 			$('.slider .arrow').click(function(){
 				player.stopVideo();
