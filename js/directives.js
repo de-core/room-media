@@ -93,7 +93,7 @@
 
 		app_d.directive('blockHeight', function(){
 			return function(scope, element, attrs){
-				element.load(function(){
+				$(document).ready(function(){
 					var h = element.find('.content').outerHeight();
 					console.log("load"+h)
 					element.find('.fotorama').fotorama({
