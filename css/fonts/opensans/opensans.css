@@ -2,10 +2,7 @@
 
 @font-face {
     font-family: 'open_sansregular';
-    src: url('fonts/opensans/opensans-regular-webfont.eot');
-    src: url('fonts/opensans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/opensans/opensans-regular-webfont.woff') format('woff'),
-         url('fonts/opensans/opensans-regular-webfont.ttf') format('truetype');
+    src: url('fonts/opensans/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

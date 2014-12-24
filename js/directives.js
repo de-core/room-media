@@ -100,31 +100,6 @@
 							width: '100%',
 							fit: 'cover'
 						});
-						// var h_1 = $('#header .content').outerHeight();
-						// var h_2 = $('#clients .content').outerHeight();
-						// var h_3 = $('#our-favourites .content').outerHeight();
-						// var h_4 = $('#partner-request .content').outerHeight();
-						// $('#header .fotorama').fotorama({
-						// 	height: h_1,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#clients .fotorama').fotorama({
-						// 	height: h_2,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#our-favourites .fotorama').fotorama({
-						// 	height: h_3,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#partner-request .fotorama').fotorama({
-						// 	height: h_4,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-
 					},
 				});
 				enquire.register("screen and (min-width:321px) and (max-width: 479px)", {
@@ -136,31 +111,6 @@
 							width: '100%',
 							fit: 'cover'
 						});
-						// var h_1 = $('#header .content').outerHeight();
-						// var h_2 = $('#clients .content').outerHeight();
-						// var h_3 = $('#our-favourites .content').outerHeight();
-						// var h_4 = $('#partner-request .content').outerHeight();
-						// $('#header .fotorama').fotorama({
-						// 	height: h_1,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#clients .fotorama').fotorama({
-						// 	height: h_2,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#our-favourites .fotorama').fotorama({
-						// 	height: h_3,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#partner-request .fotorama').fotorama({
-						// 	height: h_4,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-
 					},
 				});
 				enquire.register("screen and (min-width:480px) and (max-width: 767px)", {
@@ -172,31 +122,6 @@
 							width: '100%',
 							fit: 'cover'
 						});
-						// var h_1 = $('#header .content').outerHeight();
-						// var h_2 = $('#clients .content').outerHeight();
-						// var h_3 = $('#our-favourites .content').outerHeight();
-						// var h_4 = $('#partner-request .content').outerHeight();
-						// $('#header .fotorama').fotorama({
-						// 	height: h_1,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#clients .fotorama').fotorama({
-						// 	height: h_2,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#our-favourites .fotorama').fotorama({
-						// 	height: h_3,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#partner-request .fotorama').fotorama({
-						// 	height: h_4,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-
 					},
 				});
 				enquire.register("screen and (min-width:768px) and (max-width: 991px)", {
@@ -208,31 +133,6 @@
 							width: '100%',
 							fit: 'cover'
 						});
-						// var h_1 = $('#header .content').outerHeight();
-						// var h_2 = $('#clients .content').outerHeight();
-						// var h_3 = $('#our-favourites .content').outerHeight();
-						// var h_4 = $('#partner-request .content').outerHeight();
-						// $('#header .fotorama').fotorama({
-						// 	height: h_1,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#clients .fotorama').fotorama({
-						// 	height: h_2,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#our-favourites .fotorama').fotorama({
-						// 	height: h_3,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#partner-request .fotorama').fotorama({
-						// 	height: h_4,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-
 					},
 				});
 				enquire.register("screen and (min-width:992px) and (max-width: 1199px)", {
@@ -244,69 +144,9 @@
 							width: '100%',
 							fit: 'cover'
 						});
-						// var h_1 = $('#header .content').outerHeight();
-						// var h_2 = $('#clients .content').outerHeight();
-						// var h_3 = $('#our-favourites .content').outerHeight();
-						// var h_4 = $('#partner-request .content').outerHeight();
-						// $('#header .fotorama').fotorama({
-						// 	height: h_1,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#clients .fotorama').fotorama({
-						// 	height: h_2,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#our-favourites .fotorama').fotorama({
-						// 	height: h_3,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#partner-request .fotorama').fotorama({
-						// 	height: h_4,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-
 					},
 				});
-				// enquire.register("screen and (min-width:1200px)", {
-				// 	match : function() {
-					var h = element.find('.content').outerHeight();
-						console.log(h)
-						element.find('.fotorama').fotorama({
-							height: h,
-							width: '100%',
-							fit: 'cover'
-						});
-				// 		var h_1 = $('#header .content').outerHeight();
-				// 		var h_2 = $('#clients .content').outerHeight();
-				// 		var h_3 = $('#our-favourites .content').outerHeight();
-				// 		var h_4 = $('#partner-request .content').outerHeight();
-				// 		$('#header .fotorama').fotorama({
-				// 			height: h_1,
-				// 			width: '100%',
-				// 			fit: 'cover'
-				// 		});
-				// 		$('#clients .fotorama').fotorama({
-				// 			height: h_2,
-				// 			width: '100%',
-				// 			fit: 'cover'
-				// 		});
-				// 		$('#our-favourites .fotorama').fotorama({
-				// 			height: h_3,
-				// 			width: '100%',
-				// 			fit: 'cover'
-				// 		});
-				// 		$('#partner-request .fotorama').fotorama({
-				// 			height: h_4,
-				// 			width: '100%',
-				// 			fit: 'cover'
-				// 		});
-				// 	},
-				// });
-				enquire.register("screen and (min-width:1200px) and (max-width: 1349px)", {
+				enquire.register("screen and (min-width:1200px) and (max-width: 1499px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
 						console.log(h)
@@ -315,66 +155,6 @@
 							width: '100%',
 							fit: 'cover'
 						});
-						// var h_1 = $('#header .content').outerHeight();
-						// var h_2 = $('#clients .content').outerHeight();
-						// var h_3 = $('#our-favourites .content').outerHeight();
-						// var h_4 = $('#partner-request .content').outerHeight();
-						// $('#header .fotorama').fotorama({
-						// 	height: h_1,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#clients .fotorama').fotorama({
-						// 	height: h_2,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#our-favourites .fotorama').fotorama({
-						// 	height: h_3,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#partner-request .fotorama').fotorama({
-						// 	height: h_4,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-
-					},
-				});
-				enquire.register("screen and (min-width:1350px) and (max-width: 1499px)", {
-					match : function() {
-						var h = element.find('.content').outerHeight();
-						console.log(h)
-						element.find('.fotorama').fotorama({
-							height: h,
-							width: '100%',
-							fit: 'cover'
-						});
-						// var h_1 = $('#header .content').outerHeight();
-						// var h_2 = $('#clients .content').outerHeight();
-						// var h_3 = $('#our-favourites .content').outerHeight();
-						// var h_4 = $('#partner-request .content').outerHeight();
-						// $('#header .fotorama').fotorama({
-						// 	height: h_1,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#clients .fotorama').fotorama({
-						// 	height: h_2,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#our-favourites .fotorama').fotorama({
-						// 	height: h_3,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#partner-request .fotorama').fotorama({
-						// 	height: h_4,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
 						var h = element.find('.content').outerHeight();
 						console.log(h)
 						element.find('.fotorama').fotorama({
@@ -393,34 +173,7 @@
 							width: '100%',
 							fit: 'cover'
 						});
-						// var h_1 = $('#header .content').outerHeight();
-						// var h_2 = $('#clients .content').outerHeight();
-						// var h_3 = $('#our-favourites .content').outerHeight();
-						// var h_4 = $('#partner-request .content').outerHeight();
-						// $('#header .fotorama').fotorama({
-						// 	height: h_1,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#clients .fotorama').fotorama({
-						// 	height: h_2,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#our-favourites .fotorama').fotorama({
-						// 	height: h_3,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-						// $('#partner-request .fotorama').fotorama({
-						// 	height: h_4,
-						// 	width: '100%',
-						// 	fit: 'cover'
-						// });
-
 					},
 				});
 			}
 		});
-
-		
