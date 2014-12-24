@@ -14,7 +14,7 @@
 h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 h1 { font-size: 44px !important; }
-h2 { font-size: 36px !important; }
+h2 { font-size: 36px !important; font-weight: bold; }
 
 h3 { font-size: 31px !important; }
 
@@ -161,6 +161,7 @@ body{
 	background: #fff !important;
 	color: #2f174f !important;
 	white-space: pre-line;
+	font-weight: bold;
 	margin-top: 34px;
 	padding: 5px 25px;
 	line-height: 16px;
@@ -546,6 +547,7 @@ figure.effect-julia:hover img {
 	font-size: 21px;
 	text-decoration: underline;
 	display: inline-block;
+	font-weight: bold;
 }
 .header-right .contacts a.mail-to:hover{
 	text-decoration: none;
