@@ -1633,6 +1633,7 @@ figure.effect-julia:hover img {
 	}
 	.why-us .first-row{
 		margin-bottom: 0;
+		margin-top: 20px;
 	}
 	.why-us .second-row{
 		margin-top: 0;
@@ -1644,6 +1645,9 @@ figure.effect-julia:hover img {
 @media (max-width: 479px){
 	.why-us .why-item{
 		margin-bottom: 50px;
+	}
+	.partner-request .request-text{
+		width: 300px;
 	}
 }
 
@@ -1774,6 +1778,12 @@ figure.effect-julia:hover img {
 	font-size: 23px;
 	line-height: 37px;
 	letter-spacing: 0.06em;
+}
+@media (max-width: 767px){
+	.social p{
+		font-size: 18px !important;
+		line-height: 25px;
+	}
 }
 @media (min-width: 768px){
 	.social .links-wrap{
