@@ -3,7 +3,7 @@
 /* Directives */
 	var app_d = angular.module('scriptsDirectives', []);
 
-		app_d.directive('myScripts', function(){
+		app_d.directive('myScripts', function($window){
 			return function(scope, element, attrs){
 				smoothScroll.init({
 					speed: 600,
@@ -12,6 +12,16 @@
 					updateURL: true,
 					callbackBefore: function ( toggle, anchor ) {},
 					callbackAfter: function ( toggle, anchor ) {}
+				});
+				$(window).bind('scroll', function(e){
+					e.preventDefault();
+					var winScroll = $(window).scrollTop();
+					if (winScroll > 0){
+						$('.btn-scroll').css('display', 'block');
+					} else
+					{
+						$('.btn-scroll').css('display', 'none');
+					}
 				});
 			}
 		});
@@ -89,7 +99,6 @@
 				element.placeholder();
 			}
 		});
-
 
 		app_d.directive('blockHeight', function($timeout){
 			return function(scope, element, attrs){

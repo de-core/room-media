@@ -16,6 +16,7 @@ var app_c=angular.module('roomControllers', []);
 		});
 
 
+
 		$scope.$on('youtube.player.playing', function ($event, player) {
 			$('.slider .arrow').click(function(){
 				player.stopVideo();
