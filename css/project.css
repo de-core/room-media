@@ -50,13 +50,14 @@ a:hover, a:focus { text-decoration: none; outline: none; }
 	display: none;
 	background: #000;
 	position: fixed;
-	bottom: 60px;
+	bottom: 100px;
 	right: 40px;
 	width: 45px;
 	height: 45px;
 	border: none;
 	cursor: pointer;
 	z-index: 1000;
+	opacity: 0.7;
 }
 .btn-scroll:before{
 	content: ''; 
@@ -189,7 +190,7 @@ body{
 	white-space: pre-line;
 	font-weight: bold;
 	margin-top: 34px;
-	padding: 5px 25px;
+	/*padding: 5px 25px;*/
 	line-height: 16px;
 }
 @media (max-width: 1499px){
@@ -224,7 +225,6 @@ body{
 
 .modal-request .modal-dialog{
 	margin: 50px auto;
-	margin-top: calc((100vh - 442px)/2);
 }
 .modal-success .modal-dialog{
 	margin: 150px auto 0;
@@ -343,7 +343,28 @@ body{
 }
 @media (max-width: 500px){
 	.modal-video .slider{
-		display: none;
+		/*display: none;*/
+		height: 235px;
+		width: 100%;
+		margin: 0;
+		border: 5px solid #fff;
+	}
+	.modal-video .modal-dialog{
+		margin: 50px 0 0;
+	}
+	.modal-video .modal-body{
+		padding: 5px;
+	}
+	.modal-video .close{
+		top: -40px;
+	}
+	.modal-form .modal-content .modal-header h3{
+		font-size: 21px !important;
+	}
+}
+@media (min-height: 480px){
+	.modal-request .modal-dialog{
+		margin-top: calc((100vh - 442px)/2);
 	}
 }
 .modal-video .slide {
@@ -388,7 +409,7 @@ body{
 .modal-video .slide, .slide.ng-hide-remove.ng-hide-remove-active {
 	opacity:1;
 }
-
+@media (max-width: )
 /*hover effect for img-------------------------------------------*/
 .grid {
 	position: relative;
@@ -691,7 +712,31 @@ figure.effect-julia:hover img {
 		height: 50px;
 	}
 }
-@media (max-width: 677px){
+@media (max-width: 767px){
+	.header-left .bg-lines.line-1{
+		top: 100px;
+		left: 10%;
+	}
+	.header-left .bg-lines.line-2{
+		top: 105px;
+		left: 30%;
+	}
+	.header-left .bg-lines.line-3{
+		top: 105px;
+		left: 85%;
+	}
+	.header-left .bg-lines.line-4{
+		top: 465px;
+		left: 5%;
+	}
+	.header-left .bg-lines.line-5{
+		top: 460px;
+		left: 30%;
+	}
+	.header-left .bg-lines.line-6{
+		top: 475px;
+		left: 90%;
+	}
 	.header .header-left iframe{
 		width: 100%;
 	}
@@ -721,34 +766,30 @@ figure.effect-julia:hover img {
 	.header .header-left .video-frame{
 		display: none;
 	}
-	.header .header-right .main-title span{
-		display: block;
-		margin-bottom: 0;
-	}
 }
-@media (min-width: 600px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px){
 	.header-left .bg-lines.line-1{
-		top: 210px;
+		top: 100px;
 		left: 10%;
 	}
 	.header-left .bg-lines.line-2{
-		top: 235px;
+		top: 105px;
 		left: 30%;
 	}
 	.header-left .bg-lines.line-3{
-		top: 230px;
+		top: 105px;
 		left: 85%;
 	}
 	.header-left .bg-lines.line-4{
-		top: 615px;
+		bottom: 145px;
 		left: 5%;
 	}
 	.header-left .bg-lines.line-5{
-		top: 615px;
+		bottom: 140px;
 		left: 30%;
 	}
 	.header-left .bg-lines.line-6{
-		top: 630px;
+		bottom: 135px;
 		left: 90%;
 	}
 }
@@ -758,27 +799,27 @@ figure.effect-julia:hover img {
 		float: left;
 	}
 	.header-left .bg-lines.line-1{
-		top: 135px;
+		top: 105px;
 		left: 15%;
 	}
 	.header-left .bg-lines.line-2{
-		top: 160px;
+		top: 125px;
 		left: 35%;
 	}
 	.header-left .bg-lines.line-3{
-		top: 150px;
+		top: 100px;
 		left: 89%;
 	}
 	.header-left .bg-lines.line-4{
-		bottom: 305px;
+		bottom: 180px;
 		left: 10%;
 	}
 	.header-left .bg-lines.line-5{
-		bottom: 315px;
+		bottom: 180px;
 		left: 30%;
 	}
 	.header-left .bg-lines.line-6{
-		bottom: 310px;
+		bottom: 170px;
 		left: 92%;
 	}
 	.header-left .logo{
@@ -1697,8 +1738,9 @@ figure.effect-julia:hover img {
 		margin: 0 auto;
 	}
 	.partner-request .request-text{
-	display: inline-block;
-	text-align: left;
+		display: inline-block;
+		text-align: left;
+		float: left;
 	}
 	.partner-request .form-block{
 		display: inline-block;
