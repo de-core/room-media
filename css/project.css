@@ -715,6 +715,9 @@ figure.effect-julia:hover img {
 	.header-left .services .img-wrap img {
 		height: 40px;
 	}
+	.header-right .contacts h5{
+		margin-top: 10px;
+	}
 	.header-right .contacts a.mail-to{
 		margin-bottom: 5px;
 	}
