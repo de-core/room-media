@@ -709,14 +709,28 @@ figure.effect-julia:hover img {
 	.header-left .video-frame{
 		height: 300px;
 	}
+	.header-left .services{
+		margin-top: 20px;
+	}
 	.header-left .services .img-wrap img {
-		height: 50px;
+		height: 40px;
 	}
 	.header-right .contacts a.mail-to{
 		margin-bottom: 5px;
 	}
-	.header-right .main-title{
-		margin: 15px 0;
+	.header .header-right .main-title{
+		margin: 10px 0;
+		font-size: 20px !important;
+	}
+	.header-right .main-title span{
+		line-height: 20px;
+	}
+	.header-right .form-block p{
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+	.form-custom .input-field {
+		margin-bottom: 6px;
 	}
 }
 @media (max-width: 767px){
