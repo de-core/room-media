@@ -615,6 +615,7 @@ figure.effect-julia:hover img {
 	text-decoration: underline;
 	display: inline-block;
 	font-weight: bold;
+	margin-bottom: 15px;
 }
 .header-right .contacts a.mail-to:hover{
 	text-decoration: none;
@@ -706,10 +707,16 @@ figure.effect-julia:hover img {
 		padding: 20px 0;
 	}
 	.header-left .video-frame{
-		height: 330px;
+		height: 300px;
 	}
 	.header-left .services .img-wrap img {
 		height: 50px;
+	}
+	.header-right .contacts a.mail-to{
+		margin-bottom: 5px;
+	}
+	.header-right .main-title{
+		margin: 15px 0;
 	}
 }
 @media (max-width: 767px){
