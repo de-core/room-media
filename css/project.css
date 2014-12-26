@@ -672,8 +672,8 @@ figure.effect-julia:hover img {
 	.header-left .img-wrap{
 		margin-bottom: 10px;
 	}
-	.header-left .services img{
-		width: 40px;
+	.header-left .services .img-wrap img{
+		height: 45px;
 	}
 	.header-left .services p{
 		margin: 0 auto;
@@ -686,7 +686,7 @@ figure.effect-julia:hover img {
 	}
 	.header-right .contacts h5{
 		font-size: 15px !important;
-		margin-top: 20px;
+		margin-top: 0;
 	}
 	.header-right .contacts a.mail-to{
 		font-size: 18px;
