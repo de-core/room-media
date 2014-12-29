@@ -1599,7 +1599,7 @@ figure.effect-julia:hover img {
 	margin: 0 auto;
 }
 .gallery .img-wrap{
-	width: 12.5%;
+	width: 11.11%;
 	display: inline-block;
 }
 .gallery .img-wrap img{
@@ -1641,7 +1641,7 @@ figure.effect-julia:hover img {
 		width: 85%;
 	}
 	.gallery .images .img-wrap{
-		width: 25%;
+		width: 16.66%;
 	}
 }
 @media (min-width: 992px) and (max-width: 1599px){
