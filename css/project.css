@@ -737,27 +737,27 @@ figure.effect-julia:hover img {
 }
 @media (max-width: 767px){
 	.header-left .bg-lines.line-1{
-		top: 100px;
+		top: 113px;
 		left: 10%;
 	}
 	.header-left .bg-lines.line-2{
-		top: 105px;
+		top: 115px;
 		left: 30%;
 	}
 	.header-left .bg-lines.line-3{
-		top: 105px;
+		top: 100px;
 		left: 85%;
 	}
 	.header-left .bg-lines.line-4{
-		top: 465px;
+		top: 445px;
 		left: 5%;
 	}
 	.header-left .bg-lines.line-5{
-		top: 460px;
+		top: 430px;
 		left: 30%;
 	}
 	.header-left .bg-lines.line-6{
-		top: 475px;
+		top: 450px;
 		left: 90%;
 	}
 	.header .header-left iframe{
@@ -792,27 +792,27 @@ figure.effect-julia:hover img {
 }
 @media (min-width: 768px) and (max-width: 991px){
 	.header-left .bg-lines.line-1{
-		top: 100px;
+		top: 113px;
 		left: 10%;
 	}
 	.header-left .bg-lines.line-2{
-		top: 105px;
+		top: 120px;
 		left: 30%;
 	}
 	.header-left .bg-lines.line-3{
-		top: 105px;
+		top: 100px;
 		left: 85%;
 	}
 	.header-left .bg-lines.line-4{
-		bottom: 145px;
+		top: 590px;
 		left: 5%;
 	}
 	.header-left .bg-lines.line-5{
-		bottom: 140px;
+		top: 590px;
 		left: 30%;
 	}
 	.header-left .bg-lines.line-6{
-		bottom: 135px;
+		top: 595px;
 		left: 90%;
 	}
 	.header-left .video-frame{
@@ -825,7 +825,7 @@ figure.effect-julia:hover img {
 		float: left;
 	}
 	.header-left .bg-lines.line-1{
-		top: 105px;
+		top: 114px;
 		left: 15%;
 	}
 	.header-left .bg-lines.line-2{
@@ -837,16 +837,16 @@ figure.effect-julia:hover img {
 		left: 89%;
 	}
 	.header-left .bg-lines.line-4{
-		bottom: 180px;
+		top: 440px;
 		left: 10%;
 	}
 	.header-left .bg-lines.line-5{
-		bottom: 180px;
+		top: 430px;
 		left: 30%;
 	}
 	.header-left .bg-lines.line-6{
-		bottom: 170px;
-		left: 92%;
+		top: 445px;
+		left: 89%;
 	}
 	.header-left .logo{
 		display: block;
@@ -867,6 +867,18 @@ figure.effect-julia:hover img {
 @media (min-width: 1200px){
 	.header-left .video-frame iframe{
 		max-width: 600px;
+	}
+	.header-left .bg-lines.line-4{
+		top: 470px;
+		left: 10%;
+	}
+	.header-left .bg-lines.line-5{
+		top: 470px;
+		left: 30%;
+	}
+	.header-left .bg-lines.line-6{
+		top: 475px;
+		left: 89%;
 	}
 }
 @media (min-width: 1500px){
@@ -895,7 +907,7 @@ figure.effect-julia:hover img {
 	}
 	.header-left .bg-lines.line-6{
 		top: 620px;
-		left: 90%;
+		left: 80%;
 	}
 	.header-left .logo img{
 		margin-bottom: 50px;

@@ -142,7 +142,7 @@
 							width: '100%',
 							fit: 'cover'
 						});
-					}, 3000);
+					}, 1000);
 				});
 				enquire.register("screen and (max-width:320px)", {
 					match : function() {
