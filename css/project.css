@@ -486,6 +486,7 @@ figure.effect-julia:hover img {
 .header-content{
 	z-index: 100;
 	position: absolute;
+	opacity: 1;
 	width: 100%;
 	padding: 30px 0;
 	top: 0;
@@ -963,6 +964,7 @@ figure.effect-julia:hover img {
 	padding: 35px 0 55px;
 	top: 0;
 	left: 0;
+	opacity: 1;
 	z-index: 10;
 	overflow: hidden;
 }
@@ -1772,6 +1774,7 @@ figure.effect-julia:hover img {
 	padding: 20px 0 50px 0;
 	position: absolute;
 	z-index: 100;
+	opacity: 1;
 	width: 100%;
 	top: 0;
 	left: 0;
