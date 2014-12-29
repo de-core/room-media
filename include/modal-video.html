@@ -4,8 +4,8 @@
 			<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
 			<div class="modal-body text-center">
 				<div class="slider">
-					<div ng-repeat="photo in photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="$index==getindex">
-						<div class="video" youtube-video  video-url="photo.videourl" player-width="'100%'" player-height="'100%'" player="best.player"></div>
+					<div ng-repeat="project in projects" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="$index==getindex">
+						<div class="video" youtube-video  video-url="project.videourl" player-width="'100%'" player-height="'100%'" player="best.player"></div>
 					</div>
 					<a class="arrow prev" href="" ng-click="showPrev()"></a>
 					<a class="arrow next" href="" ng-click="showNext()"></a>

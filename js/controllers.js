@@ -4,19 +4,40 @@
 var app_c=angular.module('roomControllers', []);
 
 	app_c.controller('generalController', [ '$scope', '$http', function($scope, $http){
-		// $http.get('data/favourite-projects.json').success(function(data){
-		// 	$scope.favorites = data;
-		// }).error(function(data){
-		// 	alert("Data json Error");
-		// });
 		$http.get('data/projects.json').success(function(data){
+			$scope.projects = data;
+		}).error(function(data){
+			alert("Data json Error");
+		});
+		$http.get('data/photos.json').success(function(data){
 			$scope.photos = data;
 		}).error(function(data){
 			alert("Data json Error");
 		});
 
-
-
+		// initScrollAnimations() {
+		// 		var controller = $.superscrollorama();
+		// 		controller.pin($('.header-left'), 3000, {
+		// 	  anim: (new TimelineLite())
+		// 	    .append(
+		// 	      TweenMax.fromTo($('#bg-lines'), .5, 
+		// 	        {css:{left: -200, top: 500}, immediateRender:true}, 
+		// 	        {css:{top: -400}})
+		// 	    )
+		// 	    .append(
+		// 	      TweenMax.to($('#bg-lines'), .5, 
+		// 	        {css:{left: 200}})
+		// 	    )
+		// 	    .append(
+		// 	      TweenMax.to($('#bg-lines'), .5, 
+		// 	        {css:{top: -200}})
+		// 	    )
+		// 	    .append(
+		// 	      TweenMax.to($('#bg-lines'), .5, 
+		// 	        {css:{left: 0}})
+		// 	    )
+		// 	});
+		// }
 		$scope.$on('youtube.player.playing', function ($event, player) {
 			$('.slider .arrow').click(function(){
 				player.stopVideo();
@@ -35,7 +56,7 @@ var app_c=angular.module('roomControllers', []);
 		}
 
 		$scope.showNext = function () {
-			if ($scope.getindex < ($scope.photos.length - 1)){
+			if ($scope.getindex < ($scope.projects.length - 1)){
 				$scope.getindex = ++$scope.getindex;
 			}
 		};

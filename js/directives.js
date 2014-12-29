@@ -23,8 +23,40 @@
 						$('.btn-scroll').css('display', 'none');
 					}
 				});
+			// function initScrollAnimations() {
+			// 	var controller = $.superscrollorama();
+			// 	$('.bg-lines').each(function() {
+			// 		controller.addTween(10, TweenMax.to(this, 0, {css:{top: '0', left: '50%'}, ease:Quad.easeOut}),200);
+			// 	});
+			// }
+			$(document).ready(function(){
+
+				var controller = $.superscrollorama();
+				controller.pin($('.header-left'), 300, {
+				  anim: (new TimelineLite())
+				    .append(
+				      TweenMax.to($('.bg-lines'), .5, 
+				        {css:{left: 200, top: 500}, immediateRender:true})
+				    )
+				    // .append(
+				    //   TweenMax.to($('.bg-lines'), .5, 
+				    //     {css:{left: 200}})
+				    // )
+				    // .append(
+				    //   TweenMax.to($('.bg-lines'), .5, 
+				    //     {css:{top: -200}})
+				    // )
+				    // .append(
+				    //   TweenMax.to($('.bg-lines'), .5, 
+				    //     {css:{left: 0}})
+				    // )
+				});
+			});
+			var scrollDuration = 200; 
+			// controller.addTween('.bg-lines', TweenMax.from( $('.bg-lines'), 0.5, {css:{left: '500px'}, ease:Quad.easeOut}),0,  scrollDuration);
 			}
 		});
+
 
 	// app_d.directive('fancyBox', function(){
 	// 	return function(scope, element, attrs){
