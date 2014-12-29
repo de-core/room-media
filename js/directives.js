@@ -128,7 +128,8 @@
 
 		app_d.directive('myPlaceholder', function(){
 			return function(scope, element, attrs){
-				element.placeholder();
+				$('input[placeholder], textarea[placeholder]').placeholder();
+				console.log('placeholder')
 			}
 		});
 

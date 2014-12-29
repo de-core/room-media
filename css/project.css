@@ -98,6 +98,7 @@ body{
 	border-radius: 0;
 	width: 200px;
 	padding: 0 0 10px 0;
+	opacity: 1;
 }
 .form-custom .input-field{
 	border-bottom: 1px solid #fff;
@@ -129,29 +130,31 @@ body{
 	margin-right: 15px;
 	margin-top: 10px;
 }
-.form-custom input:focus{
+.form-custom input:focus, .form-custom input:active{
 	outline: none;
+	background: transparent;
+	color: #fff;
 }
 .form-custom .placeholder{
 	color: #fff;
 }
 .form-custom input::-webkit-input-placeholder {
-	color: white;
+	color: #fff;
 	/*font-family: 'Exo2.0-Regular' !important;*/
 	font-size: 20px;
 }
-.form-custom input::-moz-placeholder{
-	color: white;
+.form-custom input:-moz-placeholder{
+	color: #fff;
 	/*font-family: 'exo-two-regular';*/
 	font-size: 20px;
 }
-.form-custom input:-moz-placeholder{
-	color: white;
+.form-custom input::-moz-placeholder{
+	color: #fff !important;
 	/*font-family: 'exo-two-regular';*/
 	font-size: 20px;
 }
 .form-custom input:-ms-input-placeholder{
-	color: white;
+	color: #fff;
 	/*font-family: 'exo-two-regular';*/
 	font-size: 20px;
 	/*line-height: 30px;*/
@@ -177,7 +180,21 @@ body{
 	-o-transition: all 0.7s ease-out 0.5s;
 	transition: all 0.7s ease-out 0.5s;
 }
+.form-custom input:focus:-o-input-placeholder{
+	color: transparent;
+	-webkit-transition: all 0.7s ease-out 0.5s;
+	-moz-transition: all 0.7s ease-out 0.5s;
+	-o-transition: all 0.7s ease-out 0.5s;
+	transition: all 0.7s ease-out 0.5s;
+}
 .form-custom input:focus:-ms-input-placeholder{
+	color: transparent;
+	-webkit-transition: all 0.7s ease-out 0.5s;
+	-moz-transition: all 0.7s ease-out 0.5s;
+	-o-transition: all 0.7s ease-out 0.5s;
+	transition: all 0.7s ease-out 0.5s;
+}
+.form-custom input:focus::input-placeholder{
 	color: transparent;
 	-webkit-transition: all 0.7s ease-out 0.5s;
 	-moz-transition: all 0.7s ease-out 0.5s;
@@ -467,6 +484,7 @@ figure.effect-julia:hover img {
 	background-color: #575671;
 }
 .header-content{
+	z-index: 100;
 	position: absolute;
 	width: 100%;
 	padding: 30px 0;
@@ -945,6 +963,8 @@ figure.effect-julia:hover img {
 	padding: 35px 0 55px;
 	top: 0;
 	left: 0;
+	z-index: 10;
+	overflow: hidden;
 }
 .clients h2{
 	letter-spacing: 2px;
@@ -1174,6 +1194,7 @@ figure.effect-julia:hover img {
 .our-favourites-content{
 	padding: 45px 0 40px;
 	position: absolute;
+	z-index: 10;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -1750,6 +1771,7 @@ figure.effect-julia:hover img {
 	/*line-height: 25px;*/
 	padding: 20px 0 50px 0;
 	position: absolute;
+	z-index: 100;
 	width: 100%;
 	top: 0;
 	left: 0;
