@@ -38,6 +38,9 @@ var app_c=angular.module('roomControllers', []);
 		// 	    )
 		// 	});
 		// }
+		var s = skrollr.init({
+			forceHeight: false
+		});
 		$scope.$on('youtube.player.playing', function ($event, player) {
 			$('.slider .arrow').click(function(){
 				player.stopVideo();

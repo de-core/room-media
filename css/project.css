@@ -142,63 +142,44 @@ body{
 	color: #fff;
 	/*font-family: 'Exo2.0-Regular' !important;*/
 	font-size: 20px;
-}
-.form-custom input:-moz-placeholder{
-	color: #fff;
-	/*font-family: 'exo-two-regular';*/
-	font-size: 20px;
+	opacity: 1;
 }
 .form-custom input::-moz-placeholder{
 	color: #fff !important;
 	/*font-family: 'exo-two-regular';*/
 	font-size: 20px;
+	opacity: 1;
+}
+.form-custom input:-moz-placeholder{
+	color: #fff !important;
+	/*font-family: 'exo-two-regular';*/
+	font-size: 20px;
+	opacity: 1;
 }
 .form-custom input:-ms-input-placeholder{
 	color: #fff;
 	/*font-family: 'exo-two-regular';*/
 	font-size: 20px;
+	opacity: 1;
 	/*line-height: 30px;*/
 }
 .form-custom input:focus::-webkit-input-placeholder{
-	color: transparent;
+	opacity: 0;
 	-webkit-transition: all 0.7s ease-out 0.5s;
-	-moz-transition: all 0.7s ease-out 0.5s;
-	-o-transition: all 0.7s ease-out 0.5s;
 	transition: all 0.7s ease-out 0.5s;
 }
 .form-custom input:focus::-moz-placeholder{
-	color: transparent;
-	-webkit-transition: all 0.7s ease-out 0.5s;
+	opacity: 0;
 	-moz-transition: all 0.7s ease-out 0.5s;
-	-o-transition: all 0.7s ease-out 0.5s;
 	transition: all 0.7s ease-out 0.5s;
 }
 .form-custom input:focus:-moz-placeholder{
-	color: transparent;
-	-webkit-transition: all 0.7s ease-out 0.5s;
+	opacity: 0;
 	-moz-transition: all 0.7s ease-out 0.5s;
-	-o-transition: all 0.7s ease-out 0.5s;
-	transition: all 0.7s ease-out 0.5s;
-}
-.form-custom input:focus:-o-input-placeholder{
-	color: transparent;
-	-webkit-transition: all 0.7s ease-out 0.5s;
-	-moz-transition: all 0.7s ease-out 0.5s;
-	-o-transition: all 0.7s ease-out 0.5s;
 	transition: all 0.7s ease-out 0.5s;
 }
 .form-custom input:focus:-ms-input-placeholder{
-	color: transparent;
-	-webkit-transition: all 0.7s ease-out 0.5s;
-	-moz-transition: all 0.7s ease-out 0.5s;
-	-o-transition: all 0.7s ease-out 0.5s;
-	transition: all 0.7s ease-out 0.5s;
-}
-.form-custom input:focus::input-placeholder{
-	color: transparent;
-	-webkit-transition: all 0.7s ease-out 0.5s;
-	-moz-transition: all 0.7s ease-out 0.5s;
-	-o-transition: all 0.7s ease-out 0.5s;
+	opacity: 0;
 	transition: all 0.7s ease-out 0.5s;
 }
 .form-custom button.btn{
@@ -230,10 +211,10 @@ body{
 		font-size: 17px;
 	}
 	.form-custom input::-moz-placeholder{
-		font-size: 17px;
+		font-size: 17px !important;
 	}
 	.form-custom input:-moz-placeholder{
-		font-size: 17px;
+		font-size: 17px !important;
 	}
 	.form-custom input:-ms-input-placeholder{
 		font-size: 17px;
