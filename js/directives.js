@@ -94,16 +94,58 @@
 			}
 		});
 
-		app_d.directive('sendForm', function(){
+		app_d.directive('firstForm', function(){
 			var googleForm = $(window).jqGoogleForms({"formKey": "1f4DkP_zXeRJJDsKv-4cOiqkcFdLc13xSLV7sNey_6fM"});
 			return function(scope, element, attrs){
-				$('.form-custom .btn-submit').click(function(e){
+				$('#request .btn-submit').click(function(e){
+					e.preventDefault();
+					var form = $(this).parent('.form-custom');
+					var name = form.find('#name').val();
+					var email = form.find('#email').val();
+					var phone = form.find('#phone').val();
+					googleForm.sendFormData({
+					  "entry.1352981750": name,
+					  "entry.2072700322": email,
+					  "entry.1778561209": phone
+					});
+					if (name && phone) {
+					  $('#modal-success').modal('show');
+					}
+					// formId.resetForm();
+					$('#modal-request').modal('hide');
+				});
+			}
+		});
+		app_d.directive('secondForm', function(){
+			var googleForm = $(window).jqGoogleForms({"formKey": "1f4DkP_zXeRJJDsKv-4cOiqkcFdLc13xSLV7sNey_6fM"});
+			return function(scope, element, attrs){
+				$('#partner-request .btn-submit').click(function(e){
 					e.preventDefault();
 					var form = $(this).parents('.form-custom');
 					var name = form.find('#name').val();
-					  console.log(name)
 					var email = form.find('#email').val();
-					console.log(email)
+					var phone = form.find('#phone').val();
+					googleForm.sendFormData({
+					  "entry.1352981750": name,
+					  "entry.2072700322": email,
+					  "entry.1778561209": phone
+					});
+					if (name && phone) {
+					  $('#modal-success').modal('show');
+					}
+					// formId.resetForm();
+					$('#modal-request').modal('hide');
+				});
+			}
+		});
+		app_d.directive('thirdForm', function(){
+			var googleForm = $(window).jqGoogleForms({"formKey": "1f4DkP_zXeRJJDsKv-4cOiqkcFdLc13xSLV7sNey_6fM"});
+			return function(scope, element, attrs){
+				$('#modal-request .btn-submit').click(function(e){
+					e.preventDefault();
+					var form = $(this).parents('.form-custom');
+					var name = form.find('#name').val();
+					var email = form.find('#email').val();
 					var phone = form.find('#phone').val();
 					googleForm.sendFormData({
 					  "entry.1352981750": name,
@@ -119,7 +161,6 @@
 			}
 		});
 
-
 		app_d.directive('formEffect', function(){
 			return function(scope, element, attrs){
 				$.material.init();
@@ -129,7 +170,6 @@
 		app_d.directive('myPlaceholder', function(){
 			return function(scope, element, attrs){
 				$('input[placeholder], textarea[placeholder]').placeholder();
-				console.log('placeholder')
 			}
 		});
 
