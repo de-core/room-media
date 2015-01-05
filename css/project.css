@@ -146,7 +146,6 @@ body{
 }
 .form-custom input::-moz-placeholder{
 	color: #fff !important;
-	/*font-family: 'exo-two-regular';*/
 	font-size: 20px;
 	opacity: 1;
 	-moz-transition: opacity 0.7s ease-out;
@@ -154,7 +153,6 @@ body{
 }
 .form-custom input:-moz-placeholder{
 	color: #fff !important;
-	/*font-family: 'exo-two-regular';*/
 	font-size: 20px;
 	opacity: 1;
 	-moz-transition: opacity 0.7s ease-out;
@@ -162,29 +160,27 @@ body{
 }
 .form-custom input:-ms-input-placeholder{
 	color: #fff;
-	/*font-family: 'exo-two-regular';*/
 	font-size: 20px;
 	opacity: 1;
-	/*line-height: 30px;*/
 }
 .form-custom input:focus::-webkit-input-placeholder{
 	opacity: 0;
-	-webkit-transition: all 0.7s ease-out 0.5s;
-	transition: all 0.7s ease-out 0.5s;
+	-webkit-transition: all 0.7s ease-out 0.2s;
+	transition: all 0.7s ease-out 0.2s;
 }
 .form-custom input:focus::-moz-placeholder{
 	opacity: 0;
-	-moz-transition: opacity 0.7s ease-out 0.5s;
-	transition: all 0.7s ease-out 0.5s;
+	-moz-transition: opacity 0.7s ease-out 0.2s;
+	transition: all 0.7s ease-out 0.2s;
 }
 .form-custom input:focus:-moz-placeholder{
 	opacity: 0;
-	-moz-transition: all 0.7s ease-out 0.5s;
-	transition: all 0.7s ease-out 0.5s;
+	-moz-transition: all 0.7s ease-out 0.2s;
+	transition: all 0.7s ease-out 0.2s;
 }
 .form-custom input:focus:-ms-input-placeholder{
 	opacity: 0;
-	transition: all 0.7s ease-out 0.5s;
+	transition: all 0.7s ease-out 0.2s;
 }
 .form-custom button.btn{
 	background: #fff !important;
@@ -1718,6 +1714,24 @@ figure.effect-julia:hover img {
 	}
 	.why-us .second-row{
 		margin-top: 0;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-moz-box-direction: column;
+		-webkit-box-direction: column;
+		-ms-flexbox-direction: column;
+		flex-direction: column;
+	}
+	.why-us .why-item{
+		margin-bottom: 30px;
+	}
+	.why-us .why-item:nth-child(1){
+		order: 3;
+	}
+	.why-us .why-item:nth-child(2){
+		order: 2;
 	}
 }
 @media (min-width: 992px) and (max-width: 1499px){
@@ -1835,7 +1849,6 @@ figure.effect-julia:hover img {
 	top: 0;
 	left: 50%;
 	margin-left: -285px;
-	
 }
 .map .info-place{
 	margin: 0 auto;
@@ -1873,6 +1886,17 @@ figure.effect-julia:hover img {
 	text-align: left;
 	font-weight: bold;
 }
+@media (max-width: 350px){
+	.map .info-text{
+		width: 320px;
+		left: 50%;
+		margin-left: -160px;
+	}
+	.map .info .address{
+		left: 32%;
+	}
+}
+
 /*Social*/
 
 .social{

@@ -15,6 +15,7 @@ var app_c=angular.module('roomControllers', []);
 			alert("Data json Error");
 		});
 
+
 		// initScrollAnimations() {
 		// 		var controller = $.superscrollorama();
 		// 		controller.pin($('.header-left'), 3000, {
@@ -38,15 +39,19 @@ var app_c=angular.module('roomControllers', []);
 		// 	    )
 		// 	});
 		// }
-		var s = skrollr.init({
-			forceHeight: false
-		});
+		// var s = skrollr.init({
+		// 	forceHeight: false
+		// });
 		$scope.$on('youtube.player.playing', function ($event, player) {
 			$('.slider .arrow').click(function(){
 				player.stopVideo();
 			})
 		});
-
+		$scope.$on('youtube.player.playing', function ($event, player) {
+			$('#modal-video .close').click(function(){
+				player.stopVideo();
+			})
+		});
 		$scope.getindex = 0;
 
 		$scope.videoPlay = function(value, index){
