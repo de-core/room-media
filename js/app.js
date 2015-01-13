@@ -8,7 +8,6 @@ var app=angular.module('roomApp',
 		'ngTouch',
 		'roomControllers',
 		'scriptsDirectives',
-		'youtube-embed',
-		'roomFilters'
+		'youtube-embed'
 	]
 );
