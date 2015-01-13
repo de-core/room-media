@@ -105,12 +105,6 @@
 			}
 		});
 
-		// app_d.directive('formEffect', function(){
-		// 	return function(scope, element, attrs){
-		// 		$.material.init();
-		// 	}
-		// });
-
 		app_d.directive('myPlaceholder', function(){
 			return function(scope, element, attrs){
 				$('input[placeholder], textarea[placeholder]').placeholder();
