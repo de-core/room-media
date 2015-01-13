@@ -3,11 +3,5 @@
 		<div class="img-wrap" ng-repeat="photo in photos | limitTo:18">
 			<img ng-src="{{photo.img}}" ng-click="setVideo(photo.videourl, $index)">
 		</div>
-				<!-- <a class="fancybox" rel="gallery" href="{{photo.videourl}}" fancy-box><img ng-src="{{photo.img}}"></a> -->
-		<!-- <div class="grid">
-			<figure class="effect-julia" ng-repeat="photo in photos" ng-show="$index>5 && $index<30">
-				<img ng-src="{{photo.img}}" ng-click="setVideo(photo.videourl, $index)">
-			</figure>
-		</div> -->
 	</div>
 </section>
