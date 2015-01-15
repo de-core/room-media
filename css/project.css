@@ -1725,9 +1725,17 @@ figure.effect-julia:hover img {
 		margin-bottom: 30px;
 	}
 	.why-us .why-item:nth-child(1){
+		-webkit-box-ordinal-group: 3;
+		-moz-box-ordinal-group: 3;
+		-ms-flex-order: 3;
+		-webkit-order: 3;
 		order: 3;
 	}
 	.why-us .why-item:nth-child(2){
+		-webkit-box-ordinal-group: 2;
+		-moz-box-ordinal-group: 2;
+		-ms-flex-order: 2;
+		-webkit-order: 2;
 		order: 2;
 	}
 }
