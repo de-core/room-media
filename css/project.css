@@ -983,11 +983,11 @@ figure.effect-julia:hover img {
 	}
 .clients .bg-lines{
 	position: absolute;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	transform: rotate(135deg);
 	background-size: 100% 2px;
 	height: 2px;
 }
