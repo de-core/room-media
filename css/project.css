@@ -774,6 +774,9 @@ figure.effect-julia:hover img {
 	}
 }
 @media (max-width: 479px){
+	.header .fotorama{
+		display: none;
+	}
 	.header-left .bg-lines{
 		display: none;
 	}
@@ -1006,6 +1009,15 @@ figure.effect-julia:hover img {
 	width: 100px;
 	/*border-top: 2px solid #fff;*/
 	background-image: url('../img/base/gradient-gray-1.gif') ;
+}
+@media (max-width: 479px){
+	.clients-content{
+		position: relative;
+		background: #444;
+	}
+	.clients .fotorama{
+		display: none;
+	}
 }
 @media (max-width: 767px){
 	.clients img{
@@ -1294,6 +1306,13 @@ figure.effect-julia:hover img {
 	}
 }
 @media (max-width: 479px){
+	.our-favourites .fotorama{
+		display: none;
+	}
+	.our-favourites-content{
+		position: relative;
+		background: #000;
+	}
 	.our-favourites .first-row{
 		margin-top: 0;
 	}
@@ -1806,6 +1825,15 @@ figure.effect-julia:hover img {
 	width: 258px;
 	float: right;
 	margin-top: -15px;
+}
+@media (max-width: 479px){
+	.partner-request .fotorama{
+		display: none;
+	}
+	.partner-request-content{
+		position: relative;
+		background: #000;
+	}
 }
 @media (max-width: 767px){
 	.partner-request-content{
