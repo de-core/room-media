@@ -1016,7 +1016,7 @@ figure.effect-julia:hover img {
 @media (max-width: 479px){
 	.clients-content{
 		position: relative;
-		background: #444;
+		background: #333;
 	}
 	.clients .fotorama{
 		display: none;
@@ -1840,7 +1840,7 @@ figure.effect-julia:hover img {
 	}
 	.partner-request-content{
 		position: relative;
-		background: #000;
+		background: #333;
 	}
 }
 @media (max-width: 767px){
