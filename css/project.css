@@ -792,6 +792,7 @@ figure.effect-julia:hover img {
 		width: 100%;
 		margin-top: 70px;
 		margin-bottom: 0;
+		margin-left: 0;
 	}
 	.header .header-left .menu li{
 		display: block;
@@ -804,7 +805,8 @@ figure.effect-julia:hover img {
 		width: 250px;
 	}
 	.header .header-left .video-frame{
-		display: none;
+		height: 215px;
+		margin-top: 25px;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px){
