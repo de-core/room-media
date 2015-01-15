@@ -75,6 +75,11 @@ a:hover, a:focus { text-decoration: none; outline: none; }
 	border: 10px solid transparent;
 	border-bottom: 10px solid #000;
 }
+@media (max-width: 479px){
+	.btn-scroll{
+		display: none !important;
+	}
+}
 /*General styles*/
 body{
 	font-family: 'Exo2.0-Regular' !important;
@@ -1745,6 +1750,7 @@ figure.effect-julia:hover img {
 		display: flex;
 		-moz-box-direction: column;
 		-webkit-box-direction: column;
+		-webkit-flex-direction: column;
 		-ms-flexbox-direction: column;
 		flex-direction: column;
 	}
