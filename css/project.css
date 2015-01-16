@@ -1248,10 +1248,10 @@ figure.effect-julia:hover img {
 	-o-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
-	width: 400px;
-	height: 400px;
-	margin-top: -80px;
-	margin-left: -60px;
+	width: 370px;
+	height: 370px;
+	margin-top: -55px;
+	margin-left: -55px;
 }
 .our-favourites .work-wrap figure img {
 	position: relative;
@@ -1348,10 +1348,10 @@ figure.effect-julia:hover img {
 		height: 180px;
 	}
 	.our-favourites .work-wrap figure{
-		width: 400px;
-		height: 400px;
-		margin-top: -80px;
-		margin-left: -60px;
+		width: 260px;
+		height: 260px;
+		margin-top: -40px;
+		margin-left: -40px;
 	}
 }
 
