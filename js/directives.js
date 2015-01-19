@@ -195,3 +195,11 @@
 				});
 			}
 		});
+
+	app_d.directive('photoHeight', function(){
+		return function(scope, element, attrs){
+			var imgWidth = element.find('img').width();
+			var imgHeight = imgWidth;
+			element.find ('img').css('height', imgHeight);
+		}
+	});
