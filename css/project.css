@@ -493,33 +493,33 @@ figure.effect-julia:hover img {
 	height: 2px;
 }
 .header-left .bg-lines.line-1{
-	background-image: url('../img/base/gradient-violet-1.gif');
+	background-image: url('../img/base/violet-1.gif');
 	width: 35px;
 	/*border-top: 5px solid #8961b5;*/
 }
 .header-left .bg-lines.line-2{
 	width: 100px;
-	background-image: url('../img/base/gradient-violet-3.gif');
+	background-image: url('../img/base/violet-3.gif');
 	/*border-top: 2px solid #6a7bb9;*/
 }
 .header-left .bg-lines.line-3{
 	width: 50px;
-	background-image: url('../img/base/gradient-violet-2.gif');
+	background-image: url('../img/base/violet-2.gif');
 	/*border-top: 2px solid #285a97;*/
 }
 .header-left .bg-lines.line-4{
 	width: 25px;
-	background-image: url('../img/base/gradient-violet-1.gif');
+	background-image: url('../img/base/violet-1.gif');
 	/*border-top: 4px solid #5fa1dc;*/
 }
 .header-left .bg-lines.line-5{
 	width: 100px;
-	background-image: url('../img/base/gradient-violet-3.gif');
+	background-image: url('../img/base/violet-3.gif');
 	/*border-top: 2px solid #845ead;*/
 }
 .header-left .bg-lines.line-6{
 	width: 25px;
-	background-image: url('../img/base/gradient-violet-1.gif');
+	background-image: url('../img/base/violet-1.gif');
 	/*border-top: 4px solid #aa90ca;*/
 }
 .header-left .menu-sign{
@@ -993,7 +993,7 @@ figure.effect-julia:hover img {
 }
 .clients .bg-lines.line-1{
 	width: 100px;
-	background-image: url('../img/base/gradient-gray-3.gif') ;
+	background-image: url('../img/base/gray-3.gif') ;
 	/*border-top: 2px solid #fff;*/
 	top: 52px;
 	left: 20%;
@@ -1001,14 +1001,14 @@ figure.effect-julia:hover img {
 .clients .bg-lines.line-2{
 	width: 75px;
 	/*border-top: 1px solid #fff;*/
-	background-image: url('../img/base/gradient-gray-2.gif') ;
+	background-image: url('../img/base/gray-2.gif') ;
 	top: 26px;
 	left: 40%;
 }
 .clients .bg-lines.line-3{
 	width: 20px;
 	/*border-top: 4px solid #fff;*/
-	background-image: url('../img/base/gradient-gray-1.gif') ;
+	background-image: url('../img/base/gray-1.gif') ;
 	top: 50px;
 	left: 80%;
 }
@@ -1018,7 +1018,7 @@ figure.effect-julia:hover img {
 	left: 66%;
 	width: 100px;
 	/*border-top: 2px solid #fff;*/
-	background-image: url('../img/base/gradient-gray-3.gif') ;
+	background-image: url('../img/base/gray-3.gif') ;
 }
 @media (max-width: 479px){
 	.clients-content{
