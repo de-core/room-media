@@ -993,7 +993,7 @@ figure.effect-julia:hover img {
 }
 .clients .bg-lines.line-1{
 	width: 100px;
-	background-image: url('../img/base/gray-3.gpng) ;
+	background-image: url('../img/base/gray-3.png') ;
 	/*border-top: 2px solid #fff;*/
 	top: 52px;
 	left: 20%;
@@ -1001,14 +1001,14 @@ figure.effect-julia:hover img {
 .clients .bg-lines.line-2{
 	width: 75px;
 	/*border-top: 1px solid #fff;*/
-	background-image: url('../img/base/gray-2.gpng) ;
+	background-image: url('../img/base/gray-2.png') ;
 	top: 26px;
 	left: 40%;
 }
 .clients .bg-lines.line-3{
 	width: 20px;
 	/*border-top: 4px solid #fff;*/
-	background-image: url('../img/base/gray-1.gpng) ;
+	background-image: url('../img/base/gray-1.png') ;
 	top: 50px;
 	left: 80%;
 }
@@ -1018,7 +1018,7 @@ figure.effect-julia:hover img {
 	left: 66%;
 	width: 100px;
 	/*border-top: 2px solid #fff;*/
-	background-image: url('../img/base/gray-3.gpng) ;
+	background-image: url('../img/base/gray-3.png') ;
 }
 @media (max-width: 479px){
 	.clients-content{
