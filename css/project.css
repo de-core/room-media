@@ -975,12 +975,22 @@ figure.effect-julia:hover img {
 .clients .row-second img{
 	margin-top: -10px;
 }
-.clients a{
+.clients-item{
+	width: 12.5%;
+	display: inline-block;
+	margin-right: -5px;
+}
+.clients-item:nth-child(even) img{
+	margin-top: 90px;
+}
+.clients-item a{
 	display: block;
 }
-.clients img{
-		height: 75px;
-	}
+.clients-item img{
+	max-height: 65px;
+	max-width: 100%;
+	vertical-align: top;
+}
 .clients .bg-lines{
 	position: absolute;
 	-webkit-transform: rotate(135deg);
@@ -994,30 +1004,25 @@ figure.effect-julia:hover img {
 .clients .bg-lines.line-1{
 	width: 100px;
 	background-image: url('../img/base/gray-3.png') ;
-	/*border-top: 2px solid #fff;*/
 	top: 52px;
 	left: 20%;
 }
 .clients .bg-lines.line-2{
 	width: 75px;
-	/*border-top: 1px solid #fff;*/
 	background-image: url('../img/base/gray-2.png') ;
 	top: 26px;
 	left: 40%;
 }
 .clients .bg-lines.line-3{
 	width: 20px;
-	/*border-top: 4px solid #fff;*/
 	background-image: url('../img/base/gray-1.png') ;
 	top: 50px;
 	left: 80%;
 }
 .clients .bg-lines.line-4{
 	top: 90%;
-	left: 65%;
-	left: 66%;
+	left: 63%;
 	width: 100px;
-	/*border-top: 2px solid #fff;*/
 	background-image: url('../img/base/gray-3.png') ;
 }
 @media (max-width: 479px){
@@ -1036,13 +1041,16 @@ figure.effect-julia:hover img {
 	.clients .bg-lines{
 		display: none;
 	}
+	.clients-item{
+		width: 25%;
+	}
 }
 @media (min-width: 768px) and (max-width: 1499px){
 	.clients .bg-lines.line-1{
 		left: 5%;
 	}
 	.clients .bg-lines.line-4{
-		left: 75%;
+		left: 64%;
 	}
 }
 
