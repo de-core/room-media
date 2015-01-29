@@ -1,5 +1,5 @@
 <section class="our-favourites" id="our-favourites" block-height>
-	<div class="fotorama">
+	<div class="bg-fotorama fotorama">
 		<img src="img/base/keypad.jpg">
 	</div>
 	<div class="our-favourites-content content">
@@ -7,41 +7,42 @@
 			<h1 class="white"><strong>Наши любимые работы</strong></h1>
 			<div class="first-row">
 				<div class="work-wrap">
-					<figure class="effect-julia" ng-click="videoPlay(projects[0].videourl, 0)">
-						<img ng-src="{{projects[0].img}}" data-target="#modal-video" data-toggle="modal">
+					<figure class="effect-julia" ng-click="openSlider()">
+						<img ng-src="{{projects[0].img}}">
 					</figure>
 				</div>
 				<div class="work-wrap">
-					<figure class="effect-julia" ng-click="videoPlay(projects[1].videourl, 1)">
-						<img ng-src="{{projects[1].img}}" data-target="#modal-video" data-toggle="modal">
+					<figure class="effect-julia" ng-click="openSlider()" >
+						<img ng-src="{{projects[1].img}}">
 					</figure>
 				</div>
 				<div class="work-wrap">
-					<figure class="effect-julia" ng-click="videoPlay(projects[2].videourl, 2)">
-						<img ng-src="{{projects[2].img}}" data-target="#modal-video" data-toggle="modal">
+					<figure class="effect-julia" ng-click="openSlider()">
+						<img ng-src="{{projects[2].img}}">
 					</figure>
 				</div>
 			</div>
 			<div class="second-row">
 				<div class="work-wrap">
-					<figure class="effect-julia" ng-click="videoPlay(projects[3].videourl, 3)">
-						<img ng-src="{{projects[3].img}}" data-target="#modal-video" data-toggle="modal">
+					<figure class="effect-julia" ng-click="openSlider()">
+						<img ng-src="{{projects[3].img}}">
 					</figure>
 				</div>
 				<div class="work-wrap">
-					<figure class="effect-julia" ng-click="videoPlay(projects[4].videourl, 4)">
-						<img ng-src="{{projects[4].img}}" data-target="#modal-video" data-toggle="modal">
+					<figure class="effect-julia" ng-click="openSlider()">
+						<img ng-src="{{projects[4].img}}">
 					</figure>
 				</div>
 			</div>
 			<div class="third-row">
 				<div class="work-wrap">
-					<figure class="effect-julia" ng-click="videoPlay(projects[5].videourl, 5)">
-						<img ng-src="{{projects[5].img}}" data-target="#modal-video" data-toggle="modal">
+					<figure class="effect-julia" ng-click="openSlider()">
+						<img ng-src="{{projects[5].img}}">
 					</figure>
 				</div>
 			</div>
 			<a href="http://www.youtube.com/user/ROOM201FilmCompany/videos" class="more-link" target="blank">Больше работ</a>
 		</div>
 	</div>
+	<ng-include src="'include/modal-video.html'"></ng-include>
 </section>

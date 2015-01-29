@@ -23,8 +23,43 @@
 						$('.btn-scroll').css('display', 'none');
 					}
 				});
+
 			}
 		});
+		app_d.directive('fotoramaBlock', function($http){
+			return function(scope, element, attrs){
+				$http.get('data/projects.json').success(function(data){
+					scope.projects = data;
+					var $container = $('#fotorama').fotorama({
+						width: '100%',
+						data: [
+							{video: scope.projects[0].videourl},
+							{video: scope.projects[1].videourl},
+							{video: scope.projects[2].videourl},
+							{video: scope.projects[3].videourl},
+							{video: scope.projects[4].videourl},
+							{video: scope.projects[5].videourl},
+						]
+					});
+					var fotorama = $container.data('fotorama');
+					console.log(fotorama)
+					var n=0;
+					var $items;
+					$('.work-wrap').each(function(){
+						$items = $(this).find('img')
+						var itemsVal = $items.length
+						$items.attr({'data-index': n});
+						n=++n;
+					})
+					$('.our-favourites .work-wrap img').click(function(){
+						var itemIndex = $(this).data('index')
+						console.log(itemIndex)
+						fotorama.show(itemIndex);
+					});
+				})
+			}
+		});
+
 
 		app_d.directive('hoverEffect', function(){
 			return function(scope, element, attrs){
@@ -116,7 +151,7 @@
 				$(document).ready(function(){
 					$timeout(function(){
 						var h = element.find('.content').outerHeight();
-						element.find('.fotorama').fotorama({
+						element.find('.bg-fotorama.fotorama').fotorama({
 							height: h,
 							width: '100%',
 							fit: 'cover'
@@ -126,7 +161,7 @@
 				enquire.register("screen and (max-width:320px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
-						element.find('.fotorama').fotorama({
+						element.find('.bg-fotorama.fotorama').fotorama({
 							height: h,
 							width: '100%',
 							fit: 'cover'
@@ -136,7 +171,7 @@
 				enquire.register("screen and (min-width:321px) and (max-width: 479px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
-						element.find('.fotorama').fotorama({
+						element.find('.bg-fotorama.fotorama').fotorama({
 							height: h,
 							width: '100%',
 							fit: 'cover'
@@ -146,7 +181,7 @@
 				enquire.register("screen and (min-width:480px) and (max-width: 767px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
-						element.find('.fotorama').fotorama({
+						element.find('.bg-fotorama.fotorama').fotorama({
 							height: h,
 							width: '100%',
 							fit: 'cover'
@@ -156,7 +191,7 @@
 				enquire.register("screen and (min-width:768px) and (max-width: 991px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
-						element.find('.fotorama').fotorama({
+						element.find('.bg-fotorama.fotorama').fotorama({
 							height: h,
 							width: '100%',
 							fit: 'cover'
@@ -166,7 +201,7 @@
 				enquire.register("screen and (min-width:992px) and (max-width: 1199px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
-						element.find('.fotorama').fotorama({
+						element.find('.bg-fotorama.fotorama').fotorama({
 							height: h,
 							width: '100%',
 							fit: 'cover'
@@ -176,7 +211,7 @@
 				enquire.register("screen and (min-width:1200px) and (max-width: 1499px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
-						element.find('.fotorama').fotorama({
+						element.find('.bg-fotorama.fotorama').fotorama({
 							height: h,
 							width: '100%',
 							fit: 'cover'
@@ -186,7 +221,7 @@
 				enquire.register("screen and (min-width:1500px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
-						element.find('.fotorama').fotorama({
+						element.find('.bg-fotorama.fotorama').fotorama({
 							height: h,
 							width: '100%',
 							fit: 'cover'

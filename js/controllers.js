@@ -3,7 +3,8 @@
 /* Controllers */
 var app_c=angular.module('roomControllers', []);
 
-	app_c.controller('generalController', [ '$scope', '$http', function($scope, $http){
+	app_c.controller('generalController', ['$timeout', '$rootScope', '$scope', '$http',
+	 function($timeout, $rootScope, $scope, $http){
 		$http.get('data/projects.json').success(function(data){
 			$scope.projects = data;
 		}).error(function(data){
@@ -15,37 +16,19 @@ var app_c=angular.module('roomControllers', []);
 			alert("Data json Error");
 		});
 
-		$scope.$on('youtube.player.playing', function ($event, player) {
-			$('.slider .arrow').click(function(){
-				player.stopVideo();
-			})
-		});
-		$scope.$on('youtube.player.playing', function ($event, player) {
-			$('#modal-video .close').click(function(){
-				player.stopVideo();
-			})
-		});
-		$scope.getindex = 0;
-
-		$scope.videoPlay = function(value, index){
-			$scope.selected = value;
-			$scope.getindex=index;
+		$scope.openSlider = function(){
+			$('.modal-video').css('left', '0')
+			.css('position', 'fixed')
+			$timeout(function(){
+				$('.modal-video').animate({ opacity: '1'}, 500)
+			}, 500);
 		}
-		$scope.setVideo = function(value, index){
-			$scope.selected=value;
-			$scope.getindex=index;
+		$scope.closeSlider = function(){
+			$('.modal-video').animate({ opacity: '0'}, 500)
+			$timeout(function(){
+				$('.modal-video').css('position', 'absolute').css('left', '-999999px');
+			}, 500)
 		}
-
-		$scope.showNext = function () {
-			if ($scope.getindex < ($scope.projects.length - 1)){
-				$scope.getindex = ++$scope.getindex;
-			}
-		};
-		$scope.showPrev = function () {
-			if ($scope.getindex>0){
-				$scope.getindex = --$scope.getindex;
-			}
-		};
 
 	}]);
 
