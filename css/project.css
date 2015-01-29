@@ -229,6 +229,11 @@ body{
 .modal-request .modal-dialog{
 	margin: 50px auto;
 }
+@media (min-height: 480px){
+	.modal-request .modal-dialog{
+		margin-top: calc((100vh - 442px)/2);
+	}
+}
 .modal-success .modal-dialog{
 	margin: 150px auto 0;
 }
@@ -274,8 +279,9 @@ body{
 	margin: 0 auto;
 	width: auto;
 	max-width: 800px;
-	max-height: 640px;
 	position: relative;
+	border: 10px solid #fff;
+	border-radius: 4px;
 }
 .modal-video .close{
 	color: #fff;
@@ -285,16 +291,9 @@ body{
 	font-size: 50px;
 	font-weight: normal;
 	position: absolute;
-	right: -50px;
-	top: -50px;
+	right: -55px;
+	top: -60px;
 }
-
-/*.modal-video .video-wrap .fotorama{
-	height: auto;
-}*/
-/*.modal-video .fotorama__wrap, .modal-video .fotorama__stage{
-	width: 100% !important;
-}*/
 .modal-video .fotorama__wrap .fotorama__video-close{
 	display: none;
 }
@@ -304,97 +303,18 @@ body{
 	transform: translate3d(0, 0, 0) !important; 
 	opacity: 1 !important;
 }
-@media (max-width: 1023px){
+@media (max-width: 899px){
 	.modal-video .close{
-		right: 0;
-		font-size: 35px;
-	}
-}
-@media (min-width: 768px) and (max-width: 1023px){
-	.modal-video .slider{
-		height: 400px;
-	}
-}
-@media (min-width: 501px) and (max-width: 767px){
-	.modal-video .slider{
-		height: 330px;
+		right: -25px;
+		font-size: 28px;
 	}
 }
 @media (max-width: 500px){
 	.modal-video .slider{
-		/*display: none;*/
-		height: 235px;
-		width: 100%;
-		margin: 0;
 		border: 5px solid #fff;
 	}
-	.modal-video .modal-dialog{
-		margin: 50px 0 0;
-	}
-	.modal-video .modal-body{
-		padding: 5px;
-	}
-	.modal-video .close{
-		top: -40px;
-	}
-	.modal-form .modal-content .modal-header h3{
-		font-size: 21px !important;
-	}
 }
-@media (min-height: 480px){
-	.modal-request .modal-dialog{
-		margin-top: calc((100vh - 442px)/2);
-	}
-}
-/*.modal-video .arrow {
-	cursor: pointer;
-	display: block;
-	height: 30px;
-	margin-top: -30px;
-	outline: medium none;
-	position: absolute;
-	top: 50%;
-	width: 45px;
-	z-index: 5;
-	opacity: 0.8;
-	background: url("../img/base/arrows.png") no-repeat;
-	transition: all 0.2s linear 0s;
-}
-.modal-video .arrow.prev {
-	left: -50px;
-}
-.modal-video .arrow.next {
-	right: -80px;
-	background: url("../img/base/arrows.png") 0 100% no-repeat;
 
-}
-.modal-video .arrow.prev:hover{
-	opacity:1;
-}
-.modal-video .arrow.next:hover{
-	opacity:1;
-}
-.modal-video .slider {
-	border: 15px solid #fff;
-	border-radius: 5px;
-	height: 500px;
-	margin: 20px auto;
-	position: relative;
-	width: 90%;
-	max-width: 800px;
-
-	-webkit-perspective: 1000px;
-	-moz-perspective: 1000px;
-	-ms-perspective: 1000px;
-	-o-perspective: 1000px;
-	perspective: 1000px;
-
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-}*/
 /*hover effect for img-------------------------------------------*/
 .grid {
 	position: relative;
@@ -700,13 +620,13 @@ figure.effect-julia:hover img {
 		line-height: 22px;
 	}
 	.header-right .contacts h5{
-		margin-top: 15px;
+		margin-top: 20px;
 	}
 	.header-right .contacts a.mail-to{
 		margin-bottom: 5px;
 	}
 	.header .header-right .main-title{
-		margin: 10px 0;
+		margin: 25px 0;
 		font-size: 20px !important;
 	}
 	.header-right .main-title span{
@@ -714,7 +634,7 @@ figure.effect-julia:hover img {
 	}
 	.header-right .form-block p{
 		line-height: 20px;
-		margin-bottom: 10px;
+		margin-bottom: 25px;
 	}
 }
 @media (max-width: 1200px){
@@ -761,7 +681,7 @@ figure.effect-julia:hover img {
 	}
 }
 @media (max-width: 479px){
-	.header .fotorama{
+	.header .bg-fotorama{
 		display: none;
 	}
 	.header-content{
@@ -928,6 +848,9 @@ figure.effect-julia:hover img {
 		margin-bottom: 65px;
 		font-size: 36px !important;
 	}
+	.header .header-left .services{
+		margin-top: 115px;
+	}
 	.header-right .contacts{
 		margin-left: 31%;
 		margin-bottom: 70px;
@@ -1012,7 +935,7 @@ figure.effect-julia:hover img {
 		position: relative;
 		background: #333;
 	}
-	.clients .fotorama{
+	.clients .bg-fotorama{
 		display: none;
 	}
 }
@@ -1158,7 +1081,8 @@ figure.effect-julia:hover img {
 .video-types .booking-link{
 	color: #000;
 	font-size: 37px;
-	border-bottom: 2px solid #000
+	border-bottom: 2px solid #000;
+	text-decoration: none;
 }
 .video-types .booking-link:hover{
 	border-bottom: 2px solid transparent;
@@ -1221,7 +1145,7 @@ figure.effect-julia:hover img {
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	display: inline-block;
-	margin-top: 130px;
+	margin-top: 124px;
 	overflow: hidden;
 }
 .our-favourites .work-wrap+.work-wrap{
@@ -1307,7 +1231,7 @@ figure.effect-julia:hover img {
 		margin-left: 55px;
 	}
 	.our-favourites .work-wrap{
-		margin-top: -19px;
+		margin-top: -25px;
 		width: 100px;
 		height: 100px;
 	}
@@ -1319,7 +1243,7 @@ figure.effect-julia:hover img {
 	}
 }
 @media (max-width: 479px){
-	.our-favourites .fotorama{
+	.our-favourites .bg-fotorama{
 		display: none;
 	}
 	.our-favourites-content{
@@ -1515,39 +1439,6 @@ figure.effect-julia:hover img {
 	}
 	
 }
-/*@media (min-width: 992px) and (max-width: 1199px){
-	
-	.order-instr .first-row .instr-wrap:last-child span {
-		top: 4px;
-		left: 30px;
-	}
-	.order-instr .second-row .line {
-		width: 190px;
-		left: 145px;
-		top: 27px;
-	}
-	.order-instr .second-row .instr-wrap:last-child span {
-		left: 20px;
-		top: 20px;
-	}
-}*/
-/*@media (max-width: 991px){
-	.order-instr .first-row .line,
-	.order-instr .second-row .line{
-		width: 0;
-		top: 10px !important;
-		left: 145px;
-	}
-	.order-instr .first-row .line:after,
-	.order-instr .second-row .line :after{
-		display: none !important;
-	}
-	.order-instr .first-row .instr-wrap:last-child span,
-	.order-instr .second-row .instr-wrap:last-child span{
-		top: 10px;
-		left: 125px;
-	}
-}*/
 @media (min-width: 768px) and (max-width: 991px){
 	.order-instr .instr p{
 		margin-left: -30%;
@@ -1779,12 +1670,6 @@ figure.effect-julia:hover img {
 	}
 }
 @media (min-width: 992px) and (max-width: 1499px){
-	/*.why-us .first-row .why-item:nth-child(3){
-		margin-top: 40px;
-	}
-	.why-us .second-row .why-item:nth-child(1){
-		margin-bottom: 40px;
-	}*/
 	.why-us .first-row .why-item:nth-child(odd){
 		margin-top: 100px;
 	}
@@ -1847,7 +1732,7 @@ figure.effect-julia:hover img {
 	margin-top: -15px;
 }
 @media (max-width: 479px){
-	.partner-request .fotorama{
+	.partner-request .bg-fotorama{
 		display: none;
 	}
 	.partner-request-content{
@@ -1912,7 +1797,7 @@ figure.effect-julia:hover img {
 }
 .map .info-text{
 	position: absolute;
-	top: -45px;
+	top: -30px;
 	text-align: center;
 	width: 100%;
 }
