@@ -42,7 +42,7 @@
 						]
 					});
 					var fotorama = $container.data('fotorama');
-					console.log(fotorama)
+					// console.log(fotorama)
 					var n=0;
 					var $items;
 					$('.work-wrap').each(function(){
@@ -56,10 +56,20 @@
 						console.log(itemIndex)
 						fotorama.show(itemIndex);
 					});
+					$('.modal-video .close').click(function(){
+						fotorama.stopVideo();
+					});
 				})
 			}
 		});
 
+		app_d.directive('photoSize', function(){
+			return function(scope, element, attrs){
+				var w = element.width();
+				element.find('img').height(w);
+				console.log(w)
+			}
+		});
 
 		app_d.directive('hoverEffect', function(){
 			return function(scope, element, attrs){
@@ -158,26 +168,26 @@
 						});
 					}, 1000);
 				});
-				enquire.register("screen and (max-width:320px)", {
-					match : function() {
-						var h = element.find('.content').outerHeight();
-						element.find('.bg-fotorama.fotorama').fotorama({
-							height: h,
-							width: '100%',
-							fit: 'cover'
-						});
-					},
-				});
-				enquire.register("screen and (min-width:321px) and (max-width: 479px)", {
-					match : function() {
-						var h = element.find('.content').outerHeight();
-						element.find('.bg-fotorama.fotorama').fotorama({
-							height: h,
-							width: '100%',
-							fit: 'cover'
-						});
-					},
-				});
+				// enquire.register("screen and (max-width:320px)", {
+				// 	match : function() {
+				// 		var h = element.find('.content').outerHeight();
+				// 		element.find('.bg-fotorama.fotorama').fotorama({
+				// 			height: h,
+				// 			width: '100%',
+				// 			fit: 'cover'
+				// 		});						
+				// 	},
+				// });
+				// enquire.register("screen and (min-width:321px) and (max-width: 479px)", {
+				// 	match : function() {
+				// 		var h = element.find('.content').outerHeight();
+				// 		element.find('.bg-fotorama.fotorama').fotorama({
+				// 			height: h,
+				// 			width: '100%',
+				// 			fit: 'cover'
+				// 		});
+				// 	},
+				// });
 				enquire.register("screen and (min-width:480px) and (max-width: 767px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
@@ -186,6 +196,13 @@
 							width: '100%',
 							fit: 'cover'
 						});
+						if (element.hasClass('clients')){
+							element.find('.fotorama').fotorama({
+								height: '562px',
+								width: '100%',
+								fit: 'cover'
+							});
+						}
 					},
 				});
 				enquire.register("screen and (min-width:768px) and (max-width: 991px)", {
@@ -196,6 +213,13 @@
 							width: '100%',
 							fit: 'cover'
 						});
+						if (element.hasClass('clients')){
+							element.find('.fotorama').fotorama({
+								height: '340px',
+								width: '100%',
+								fit: 'cover'
+							});
+						}
 					},
 				});
 				enquire.register("screen and (min-width:992px) and (max-width: 1199px)", {
@@ -206,6 +230,13 @@
 							width: '100%',
 							fit: 'cover'
 						});
+						if (element.hasClass('clients')){
+							element.find('.fotorama').fotorama({
+								height: '355px',
+								width: '100%',
+								fit: 'cover'
+							});
+						}
 					},
 				});
 				enquire.register("screen and (min-width:1200px) and (max-width: 1499px)", {
@@ -216,6 +247,13 @@
 							width: '100%',
 							fit: 'cover'
 						});
+						if (element.hasClass('clients')){
+							element.find('.fotorama').fotorama({
+								height: '360px',
+								width: '100%',
+								fit: 'cover'
+							});
+						}
 					},
 				});
 				enquire.register("screen and (min-width:1500px)", {
@@ -226,6 +264,13 @@
 							width: '100%',
 							fit: 'cover'
 						});
+						if (element.hasClass('clients')){
+							element.find('.fotorama').fotorama({
+								height: '360px',
+								width: '100%',
+								fit: 'cover'
+							});
+						}
 					},
 				});
 			}
