@@ -862,7 +862,6 @@ figure.effect-julia:hover img {
 .clients{
 	position: relative;
 }
-
 .clients-content{
 	color: #fff;
 	position: absolute;
@@ -1866,12 +1865,16 @@ figure.effect-julia:hover img {
 	}
 	.map .info-place{
 		width: 100%;
-		height: 205px;
+		height: 220px;
 		border: none;
 		background: #fff;
 	}
 }
-
+@media (max-width: 479px){
+	.map .info .address{
+		left: 20%;
+	}
+}
 
 /*Social*/
 
