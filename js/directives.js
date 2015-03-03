@@ -183,91 +183,86 @@
 				enquire.register("screen and (min-width:480px) and (max-width: 767px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
-						if (element.hasClass('clients')){
-							element.find('.fotorama').fotorama({
-								height: '562px',
-								width: '100%',
-								fit: 'cover'
-							})
-						} else {
-							element.find('.bg-fotorama.fotorama').fotorama({
-								height: h,
-								width: '100%',
-								fit: 'cover'
-							});
-						}
+						element.find('.bg-fotorama.fotorama').fotorama({
+							height: h,
+							width: '100%',
+							fit: 'cover'
+						});
+						// if (element.hasClass('clients')){
+						// 	element.find('.fotorama').fotorama({
+						// 		height: '562px',
+						// 		width: '100%',
+						// 		fit: 'cover'
+						// 	});
+						// }
 					},
 				});
 				enquire.register("screen and (min-width:768px) and (max-width: 991px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
-						if (element.hasClass('clients')){
-							element.find('.fotorama').fotorama({
-								height: '340px',
-								width: '100%',
-								fit: 'cover'
-							});
-						} else {
-							element.find('.bg-fotorama.fotorama').fotorama({
-								height: h,
-								width: '100%',
-								fit: 'cover'
-							});
-						}
+						element.find('.bg-fotorama.fotorama').fotorama({
+							height: h,
+							width: '100%',
+							fit: 'cover'
+						});
+						// if (element.hasClass('clients')){
+						// 	element.find('.fotorama').fotorama({
+						// 		height: '340px',
+						// 		width: '100%',
+						// 		fit: 'cover'
+						// 	});
+						// }
 					},
 				});
 				enquire.register("screen and (min-width:992px) and (max-width: 1199px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
-						if (element.hasClass('clients')){
-							element.find('.fotorama').fotorama({
-								height: '355px',
-								width: '100%',
-								fit: 'cover'
-							});
-						} else {
-							element.find('.bg-fotorama.fotorama').fotorama({
-								height: h,
-								width: '100%',
-								fit: 'cover'
-							});
-						}
+						element.find('.bg-fotorama.fotorama').fotorama({
+							height: h,
+							width: '100%',
+							fit: 'cover'
+						});
+						// if (element.hasClass('clients')){
+						// 	element.find('.fotorama').fotorama({
+						// 		height: '355px',
+						// 		width: '100%',
+						// 		fit: 'cover'
+						// 	});
+						// }
 					},
 				});
 				enquire.register("screen and (min-width:1200px) and (max-width: 1499px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
-						if (element.hasClass('clients')){
-							element.find('.fotorama').fotorama({
-								height: '360px',
-								width: '100%',
-								fit: 'cover'
-							});
-						} else {
-							element.find('.bg-fotorama.fotorama').fotorama({
-								height: h,
-								width: '100%',
-								fit: 'cover'
-							});
-						}
+						element.find('.bg-fotorama.fotorama').fotorama({
+							height: h,
+							width: '100%',
+							fit: 'cover'
+						});
+						// if (element.hasClass('clients')){
+						// 	element.find('.fotorama').fotorama({
+						// 		height: '360px',
+						// 		width: '100%',
+						// 		fit: 'cover'
+						// 	});
+						// }
 					},
 				});
 				enquire.register("screen and (min-width:1500px)", {
 					match : function() {
 						var h = element.find('.content').outerHeight();
-						if (element.hasClass('clients')){
-							element.find('.fotorama').fotorama({
-								height: '360px',
-								width: '100%',
-								fit: 'cover'
-							});
-						} else {
-							element.find('.bg-fotorama.fotorama').fotorama({
-								height: h,
-								width: '100%',
-								fit: 'cover'
-							});
-						}
+						element.find('.bg-fotorama.fotorama').fotorama({
+							height: h,
+							width: '100%',
+							fit: 'cover'
+						});
+						// if (element.hasClass('clients')){
+						// 	element.find('.fotorama').fotorama({
+						// 		height: '360px',
+						// 		width: '100%',
+						// 		fit: 'cover'
+						// 	});
+						// }
 					},
 				});
 			}
