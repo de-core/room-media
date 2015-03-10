@@ -188,13 +188,13 @@
 							width: '100%',
 							fit: 'cover'
 						});
-						// if (element.hasClass('clients')){
-						// 	element.find('.fotorama').fotorama({
-						// 		height: '562px',
-						// 		width: '100%',
-						// 		fit: 'cover'
-						// 	});
-						// }
+						if (element.hasClass('clients')){
+							element.find('.fotorama').fotorama({
+								height: '562px',
+								width: '100%',
+								fit: 'cover'
+							});
+						}
 					},
 				});
 				enquire.register("screen and (min-width:768px) and (max-width: 991px)", {
@@ -205,13 +205,13 @@
 							width: '100%',
 							fit: 'cover'
 						});
-						// if (element.hasClass('clients')){
-						// 	element.find('.fotorama').fotorama({
-						// 		height: '340px',
-						// 		width: '100%',
-						// 		fit: 'cover'
-						// 	});
-						// }
+						if (element.hasClass('clients')){
+							element.find('.fotorama').fotorama({
+								height: '340px',
+								width: '100%',
+								fit: 'cover'
+							});
+						}
 					},
 				});
 				enquire.register("screen and (min-width:992px) and (max-width: 1199px)", {
@@ -222,13 +222,13 @@
 							width: '100%',
 							fit: 'cover'
 						});
-						// if (element.hasClass('clients')){
-						// 	element.find('.fotorama').fotorama({
-						// 		height: '355px',
-						// 		width: '100%',
-						// 		fit: 'cover'
-						// 	});
-						// }
+						if (element.hasClass('clients')){
+							element.find('.fotorama').fotorama({
+								height: '355px',
+								width: '100%',
+								fit: 'cover'
+							});
+						}
 					},
 				});
 				enquire.register("screen and (min-width:1200px) and (max-width: 1499px)", {
@@ -239,13 +239,13 @@
 							width: '100%',
 							fit: 'cover'
 						});
-						// if (element.hasClass('clients')){
-						// 	element.find('.fotorama').fotorama({
-						// 		height: '360px',
-						// 		width: '100%',
-						// 		fit: 'cover'
-						// 	});
-						// }
+						if (element.hasClass('clients')){
+							element.find('.fotorama').fotorama({
+								height: '360px',
+								width: '100%',
+								fit: 'cover'
+							});
+						}
 					},
 				});
 				enquire.register("screen and (min-width:1500px)", {
@@ -256,13 +256,13 @@
 							width: '100%',
 							fit: 'cover'
 						});
-						// if (element.hasClass('clients')){
-						// 	element.find('.fotorama').fotorama({
-						// 		height: '360px',
-						// 		width: '100%',
-						// 		fit: 'cover'
-						// 	});
-						// }
+						if (element.hasClass('clients')){
+							element.find('.fotorama').fotorama({
+								height: '360px',
+								width: '100%',
+								fit: 'cover'
+							});
+						}
 					},
 				});
 			}
